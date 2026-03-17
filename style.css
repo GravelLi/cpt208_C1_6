@@ -561,7 +561,7 @@ a {
 
 .persona-full-image-wrap {
     width: 100%;
-    max-width: 920px;   /* 关键：限制图片区域最大宽度 */
+    max-width: 720px;   /* 关键：限制图片区域最大宽度 */
     margin: 0 auto;     /* 居中 */
     border-radius: 22px;
     overflow: hidden;
