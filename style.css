@@ -9,14 +9,10 @@
     --primary: #b45acb;
     --primary-deep: #9126b7;
     --primary-soft: #f2dbfb;
-    --secondary-soft: #faf0ff;
 
     --shadow-lg: 0 24px 60px rgba(118, 52, 141, 0.10);
     --shadow-md: 0 14px 30px rgba(118, 52, 141, 0.08);
 
-    --radius-xl: 28px;
-    --radius-lg: 22px;
-    --radius-md: 16px;
     --max-width: 1200px;
 }
 
@@ -177,8 +173,7 @@ a {
 }
 
 .hero-card,
-.member-card,
-.persona-image-card {
+.member-card {
     background: var(--surface);
     border: 1px solid var(--line);
     box-shadow: var(--shadow-md);
@@ -328,71 +323,18 @@ a {
 .persona-gallery {
     display: flex;
     flex-direction: column;
-    gap: 28px;
-}
-
-.persona-image-card {
-    border-radius: 28px;
-    padding: 22px;
-    background: linear-gradient(180deg, #ffffff 0%, #fcf7ff 100%);
-}
-
-.persona-card-header {
-    display: flex;
-    justify-content: space-between;
+    gap: 34px;
     align-items: center;
-    gap: 18px;
-    margin-bottom: 18px;
-}
-
-.persona-type {
-    color: var(--primary-deep);
-    font-size: 0.84rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 4px;
-}
-
-.persona-card-header h3 {
-    font-size: 1.7rem;
-    letter-spacing: -0.03em;
-}
-
-.persona-badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 14px;
-    border-radius: 999px;
-    background: var(--primary-soft);
-    color: var(--primary-deep);
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-#personas .persona-full-image-wrap {
-    width: fit-content;
-    max-width: 560px;
-    margin: 0 auto;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 1px solid var(--line);
-    background: #ffffff;
-    box-shadow: 0 10px 24px rgba(118, 52, 141, 0.08);
 }
 
 #personas .persona-full-image {
     display: block;
-    width: 100%;
-    max-width: 560px;
+    width: min(100%, 1120px);
     height: auto;
-    margin: 0 auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-#personas .persona-full-image-wrap:hover .persona-full-image {
-    transform: scale(1.01);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    border: none;
 }
 
 .footer {
@@ -411,6 +353,10 @@ a {
 
     .members-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #personas .persona-full-image {
+        width: 100%;
     }
 }
 
@@ -436,24 +382,6 @@ a {
 
     .members-grid {
         grid-template-columns: 1fr;
-    }
-
-    .persona-card-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .persona-card-header h3 {
-        font-size: 1.45rem;
-    }
-
-    #personas .persona-full-image-wrap {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    #personas .persona-full-image {
-        max-width: 100%;
     }
 
     .hero-text h1 {
