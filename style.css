@@ -302,10 +302,21 @@ a {
     margin-bottom: 18px;
 }
 
-.avatar-a { background: linear-gradient(135deg, #bf6bd8, #8e20b5); }
-.avatar-b { background: linear-gradient(135deg, #c97ddf, #a43dc7); }
-.avatar-c { background: linear-gradient(135deg, #d18ae3, #b14ed0); }
-.avatar-d { background: linear-gradient(135deg, #ab57c7, #8420a5); }
+.avatar-a {
+    background: linear-gradient(135deg, #bf6bd8, #8e20b5);
+}
+
+.avatar-b {
+    background: linear-gradient(135deg, #c97ddf, #a43dc7);
+}
+
+.avatar-c {
+    background: linear-gradient(135deg, #d18ae3, #b14ed0);
+}
+
+.avatar-d {
+    background: linear-gradient(135deg, #ab57c7, #8420a5);
+}
 
 .member-body h3 {
     font-size: 1.18rem;
@@ -371,8 +382,8 @@ a {
 }
 
 #personas .persona-full-image-wrap {
-    width: fit-content;
-    max-width: 560px;
+    width: 560px;
+    max-width: 100%;
     margin: 0 auto;
     border-radius: 20px;
     overflow: hidden;
@@ -384,15 +395,8 @@ a {
 #personas .persona-full-image {
     display: block;
     width: 100%;
-    max-width: 560px;
     height: auto;
     margin: 0 auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-#personas .persona-full-image-wrap:hover .persona-full-image {
-    transform: scale(1.01);
 }
 
 .footer {
@@ -453,6 +457,7 @@ a {
     }
 
     #personas .persona-full-image {
+        width: 100%;
         max-width: 100%;
     }
 
