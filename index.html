@@ -3,532 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HerRun | Group Portfolio</title>
+    <title>HerRun | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="page-shell">
-        <header class="hero">
-            <nav class="topbar">
-                <div class="brand">
+        <nav class="site-nav" aria-label="Main navigation">
+            <div class="site-nav-inner">
+                <a class="brand" href="index.html">
                     <img class="brand-mark" src="images/Icon.png" alt="HerRun logo">
                     <span>HerRun</span>
-                </div>
+                </a>
 
                 <div class="nav-links">
-                    <a href="#about">Project</a>
-                    <a href="#research">Research</a>
-                    <a href="#requirements">Requirements</a>
-                    <a href="#members">Members</a>
-                    <a href="#personas">Personas</a>                    
-                </div>
-            </nav>
-
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p class="eyebrow">Human-Centric Computing Group Project</p>
-                    <h1>A modern running platform for connection, safety, and organization</h1>
-                    <p class="hero-description">
-                        HerRun is designed for university runners and club organizers. It helps students discover
-                        group runs, stay motivated, and feel safer during activities, while giving organizers better
-                        tools for announcements, scheduling, and participant management.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a class="button button-primary" href="#members">Meet the Team</a>
-                        <a class="button button-secondary" href="#personas">View Personas</a>
-                    </div>
+                    <a class="nav-link is-active" href="index.html">Home</a>
+                    <a class="nav-link" href="motivation.html">Motivation &amp; Research</a>
+                    <a class="nav-link" href="requirements.html">User Requirements</a>
+                    <a class="nav-link" href="ideation.html">Ideation &amp; Alternatives</a>
+                    <a class="nav-link" href="technical.html">Technical Implementation</a>
+                    <a class="nav-link" href="evaluation.html">Evaluation &amp; Reflection</a>
                 </div>
             </div>
-        </header>
+        </nav>
 
-        <main>
-            <section id="about" class="section intro-section">
-                <div class="section-heading reveal">
-                    <p class="section-tag">About the project</p>
-                    <h2>What are we building?</h2>
-                    <p>
-                        Our project explores a digital platform for a university running club. The platform supports
-                        both regular student runners and club leaders by centralizing event information, improving
-                        social connection, and making group running safer and easier to manage.
-                    </p>
+        <main class="page-main">
+            <section class="hero-panel page-enter">
+                <div class="hero-grid">
+                    <div class="hero-copy">
+                        <p class="eyebrow">Human-Centric Computing Group Portfolio</p>
+                        <h1>A modern running platform for connection, safety, and organization</h1>
+                        <p class="lead">
+                            HerRun is a university HCI portfolio about designing a running experience that feels safer,
+                            more welcoming, and more playful for student communities, especially women runners balancing
+                            wellbeing, social confidence, and everyday campus life.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="motivation.html">Start With Research</a>
+                            <a class="button button-secondary" href="technical.html">View Implementation</a>
+                        </div>
+                    </div>
+
+                    <aside class="hero-card">
+                        <span class="pill-label">Portfolio Map</span>
+                        <h2>Six independent pages document the full project journey</h2>
+                        <div class="mini-grid">
+                            <article class="mini-card">
+                                <span class="mini-kicker">1. Home</span>
+                                <p>Project overview and entry point into the portfolio.</p>
+                            </article>
+                            <article class="mini-card">
+                                <span class="mini-kicker">2. Research</span>
+                                <p>The Why, The Gap, and stakeholder understanding.</p>
+                            </article>
+                            <article class="mini-card">
+                                <span class="mini-kicker">3. Requirements</span>
+                                <p>User journey, playful conditions, and field evidence.</p>
+                            </article>
+                            <article class="mini-card">
+                                <span class="mini-kicker">4. Ideation</span>
+                                <p>Sketches, alternatives, and low-fi exploration.</p>
+                            </article>
+                            <article class="mini-card">
+                                <span class="mini-kicker">5. Technical</span>
+                                <p>Architecture, high-fi delivery, and contribution structure.</p>
+                            </article>
+                            <article class="mini-card">
+                                <span class="mini-kicker">6. Evaluation</span>
+                                <p>Testing results, refinement logic, and final reflection.</p>
+                            </article>
+                        </div>
+                    </aside>
                 </div>
             </section>
 
-            <section id="research" class="section research-section">
-                <div class="section-heading reveal">
-                    <p class="section-tag">Motivation &amp; Research</p>
-                    <h2>Why this direction matters and where design opportunity appears</h2>
+            <section class="content-panel page-enter">
+                <div class="section-heading">
+                    <p class="section-tag">Overview</p>
+                    <h2>What this portfolio is trying to show</h2>
                     <p>
-                        This section introduces the reasoning behind our topic choice, the comparison space we are mapping,
-                        and the stakeholder groups we are designing for before the detailed persona boards later in the page.
+                        This website is structured as a true multi-page portfolio so each major part of the project can
+                        stand on its own. Instead of forcing everything into one long scroll, each page focuses on one
+                        phase of the HerRun process and keeps the story clearer for review.
                     </p>
                 </div>
 
-                <div class="research-layout">
-                    <article class="why-card reveal">
-                        <div class="research-kicker">The Why</div>
-                        <h3>Designing for active lives, wellbeing, and safer social running</h3>
+                <div class="overview-grid">
+                    <article class="feature-card">
+                        <span class="pill-label">Project Direction</span>
+                        <h3>Human-centered and community-driven</h3>
                         <p>
-                            Our group selected the Active track because movement is deeply connected to student wellbeing, confidence,
-                            and everyday routine. Running is not only a physical activity; for many university students it is also a
-                            way to manage stress, stay socially connected, and build healthy habits during a demanding academic period.
-                            At the same time, participation is shaped by practical concerns such as schedule coordination, confidence,
-                            visibility of events, and personal safety. These questions become even more important when we consider women
-                            runners, first-time participants, and students who want community but may feel uncertain about joining alone.
-                            HerRun responds to this space by exploring how a digital platform could make running feel more welcoming,
-                            better organized, and easier to trust. We are interested in the point where motivation, communication,
-                            and safety meet. By focusing on a university context, the project stays grounded in a real environment with
-                            recurring events, recognizable stakeholders, and strong opportunities to support both individual wellbeing and
-                            collective participation.
+                            HerRun focuses on women runners, student wellbeing, group coordination, playful motivation,
+                            and a stronger sense of trust before and during participation.
                         </p>
                     </article>
 
-                    <div class="gap-section reveal">
-                        <div class="subsection-heading reveal">
-                            <div>
-                                <p class="section-tag">The Gap</p>
-                                <h3>Comparison across research papers and commercial products</h3>
-                            </div>
-                            <p>
-                                We are comparing what existing academic and market solutions already support, and where they still leave
-                                unmet needs around motivation, safety, coordination, and social comfort.
-                            </p>
-                        </div>
-
-                        <div class="gap-columns">
-                            <div class="gap-column">
-                                <div class="gap-column-header">
-                                    <span class="comparison-badge">Academic Papers</span>
-                                    <p>Structured notes for four references we will review in depth.</p>
-                                </div>
-
-                                <div class="gap-grid">
-                                    <article class="gap-card reveal">
-                                        <h4>Paper 1</h4>
-                                        <div class="gap-list-block">
-                                            <span>Did well</span>
-                                            <ul>
-                                                <li>Explained motivation patterns among student runners.</li>
-                                                <li>Connected physical activity with social belonging.</li>
-                                                <li>Highlighted behavioural barriers in participation.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="gap-list-block">
-                                            <span>Missed</span>
-                                            <ul>
-                                                <li>Did not address real-time coordination needs.</li>
-                                                <li>Offered little guidance on safety perception.</li>
-                                                <li>Lacked direct implications for product interaction.</li>
-                                            </ul>
-                                        </div>
-                                    </article>
-
-                                    <article class="gap-card reveal">
-                                        <h4>Paper 2</h4>
-                                        <div class="gap-list-block">
-                                            <span>Did well</span>
-                                            <ul>
-                                                <li>Discussed community-based motivation in exercise.</li>
-                                                <li>Compared short-term and long-term engagement drivers.</li>
-                                                <li>Provided evidence for habit-forming support features.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="gap-list-block">
-                                            <span>Missed</span>
-                                            <ul>
-                                                <li>Focused more on theory than actionable interface design.</li>
-                                                <li>Did not include club organizer perspectives.</li>
-                                                <li>Ignored onboarding anxiety for new members.</li>
-                                            </ul>
-                                        </div>
-                                    </article>
-
-                                    <article class="gap-card reveal">
-                                        <h4>Paper 3</h4>
-                                        <div class="gap-list-block">
-                                            <span>Did well</span>
-                                            <ul>
-                                                <li>Examined trust and accountability in group activities.</li>
-                                                <li>Raised useful questions about communication clarity.</li>
-                                                <li>Suggested ways to reduce uncertainty before events.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="gap-list-block">
-                                            <span>Missed</span>
-                                            <ul>
-                                                <li>Did not focus specifically on running contexts.</li>
-                                                <li>Overlooked emotional safety for women participants.</li>
-                                                <li>Provided limited comparison with digital tools.</li>
-                                            </ul>
-                                        </div>
-                                    </article>
-
-                                    <article class="gap-card reveal">
-                                        <h4>Paper 4</h4>
-                                        <div class="gap-list-block">
-                                            <span>Did well</span>
-                                            <ul>
-                                                <li>Investigated wellbeing outcomes tied to active routines.</li>
-                                                <li>Made a strong case for accessible campus activities.</li>
-                                                <li>Supported the value of peer encouragement.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="gap-list-block">
-                                            <span>Missed</span>
-                                            <ul>
-                                                <li>Did not explore scheduling and announcement friction.</li>
-                                                <li>Left organizer workflows underdeveloped.</li>
-                                                <li>Did not map how students discover events.</li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-
-                            <div class="gap-column">
-                                <div class="gap-column-header">
-                                    <span class="comparison-badge">Commercial Products</span>
-                                    <p>Snapshot placeholders for four products we will compare against.</p>
-                                </div>
-
-                                <div class="gap-grid">
-                                    <article class="gap-card reveal">
-                                        <h4>Product 1</h4>
-                                        <div class="gap-list-block">
-                                            <span>Did well</span>
-                                            <ul>
-                                                <li>Offered clean event discovery and scheduling tools.</li>
-                                                <li>Presented strong visual motivation through tracking.</li>
-                                                <li>Made progress and participation feel visible.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="gap-list-block">
-                                            <span>Missed</span>
-                                            <ul>
-                                                <li>Weak support for group safety expectations.</li>
-                                                <li>Limited features for campus-specific communities.</li>
-                                                <li>Did not help organizers manage communication well.</li>
-                                            </ul>
-                                        </div>
-                                    </article>
-
-                                    <article class="gap-card reveal">
-                                        <h4>Product 2</h4>
-                                        <div class="gap-list-block">
-                                            <span>Did well</span>
-                                            <ul>
-                                                <li>Included strong social sharing and interaction cues.</li>
-                                                <li>Encouraged routine participation through reminders.</li>
-                                                <li>Reduced friction in joining visible activities.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="gap-list-block">
-                                            <span>Missed</span>
-                                            <ul>
-                                                <li>Did not distinguish needs of new and experienced runners.</li>
-                                                <li>Safety information was not foregrounded.</li>
-                                                <li>Club administration tools were minimal.</li>
-                                            </ul>
-                                        </div>
-                                    </article>
-
-                                    <article class="gap-card reveal">
-                                        <h4>Product 3</h4>
-                                        <div class="gap-list-block">
-                                            <span>Did well</span>
-                                            <ul>
-                                                <li>Supported route planning and activity coordination.</li>
-                                                <li>Made participation logistics easier to understand.</li>
-                                                <li>Provided strong utility for recurring activities.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="gap-list-block">
-                                            <span>Missed</span>
-                                            <ul>
-                                                <li>Visual design felt task-heavy rather than welcoming.</li>
-                                                <li>Social belonging was under-emphasized.</li>
-                                                <li>Motivation features lacked emotional resonance.</li>
-                                            </ul>
-                                        </div>
-                                    </article>
-
-                                    <article class="gap-card reveal">
-                                        <h4>Product 4</h4>
-                                        <div class="gap-list-block">
-                                            <span>Did well</span>
-                                            <ul>
-                                                <li>Created trust through clear status and update patterns.</li>
-                                                <li>Handled notifications and reminders effectively.</li>
-                                                <li>Showed how structured information can reduce confusion.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="gap-list-block">
-                                            <span>Missed</span>
-                                            <ul>
-                                                <li>Did not address emotional hesitation before joining.</li>
-                                                <li>Offered weak support for inclusive community tone.</li>
-                                                <li>Lacked a tailored experience for university runners.</li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="stakeholders-section">
-                        <div class="subsection-heading reveal">
-                            <div>
-                                <p class="section-tag">The Stakeholders</p>
-                                <h3>Early summaries of the two user groups we are designing around</h3>
-                            </div>
-                            <p>
-                                These cards combine stakeholder framing with the persona boards, so each user group and its full profile stay together in one place.
-                            </p>
-                        </div>
-
-                        <div id="personas" class="stakeholder-grid">
-                            <article class="stakeholder-card reveal">
-                                <span class="comparison-badge">Primary User</span>
-                                <h4>Student runner seeking confidence, routine, and connection</h4>
-                                <div class="stakeholder-persona-wrap">
-                                    <img src="images/Primary Persona改色版2.0.png" alt="Primary persona Jia Han" class="stakeholder-persona-image">
-                                </div>
-                            </article>
-
-                            <article class="stakeholder-card reveal">
-                                <span class="comparison-badge">Secondary User</span>
-                                <h4>Organizer managing visibility, coordination, and participant trust</h4>
-                                <div class="stakeholder-persona-wrap">
-                                    <img src="images/Secondary persona(Female改色版).png" alt="Secondary persona Yu Xiao" class="stakeholder-persona-image">
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="requirements" class="section requirements-section">
-                <div class="section-heading reveal">
-                    <p class="section-tag">User Requirements</p>
-                    <h2>Mapping experience, playful criteria, and evidence from the field</h2>
-                    <p>
-                        This section translates research into user-facing requirements by showing the journey we are examining,
-                        the playful conditions we want the system to satisfy, and early evidence gathered from real-world engagement.
-                    </p>
-                </div>
-
-                <div class="requirements-layout">
-                    <article class="journey-feature-card reveal">
-                        <div class="subsection-heading journey-heading reveal">
-                            <div>
-                                <p class="section-tag">User Journey Map</p>
-                                <h3>Current user pain points and journey overview</h3>
-                            </div>
-                            <p>
-                                This visual map shows the current experience of the target user and highlights the moments
-                                where uncertainty, friction, and emotional hesitation begin to affect participation.
-                            </p>
-                        </div>
-
-                        <div class="journey-image-shell">
-                            <div class="journey-image-frame">
-                                <img src="images/User Journey Map Portfolio版.png" alt="User journey map for HerRun" class="journey-image">
-                            </div>
-                            <p class="journey-caption">Current user pain points and journey overview</p>
-                        </div>
+                    <article class="feature-card">
+                        <span class="pill-label">Portfolio Logic</span>
+                        <h3>From problem framing to reflection</h3>
+                        <p>
+                            Each page shows one major stage of the design process with meaningful placeholders so the site
+                            already feels complete and ready for later final project content.
+                        </p>
                     </article>
 
-                    <div class="requirements-grid">
-                        <div class="requirements-list-card reveal">
-                            <div class="subsection-heading requirements-heading reveal">
-                                <div>
-                                    <p class="section-tag">Requirements List</p>
-                                    <h3>Three must-have conditions for a playful HerRun experience</h3>
-                                </div>
-                                <p>
-                                    These placeholder requirements define the minimum conditions the system should meet to feel
-                                    approachable, socially engaging, and emotionally rewarding.
-                                </p>
-                            </div>
-
-                            <div class="requirement-cards">
-                                <article class="requirement-item reveal">
-                                    <span class="comparison-badge">Must-Have 1</span>
-                                    <h4>Encourage low-pressure engagement</h4>
-                                    <p>
-                                        The experience should help students join without feeling judged, overcommitted,
-                                        or overwhelmed before they feel ready.
-                                    </p>
-                                </article>
-
-                                <article class="requirement-item reveal">
-                                    <span class="comparison-badge">Must-Have 2</span>
-                                    <h4>Support playful social interaction</h4>
-                                    <p>
-                                        The system should make communication, participation, and shared progress feel light,
-                                        welcoming, and socially motivating.
-                                    </p>
-                                </article>
-
-                                <article class="requirement-item reveal">
-                                    <span class="comparison-badge">Must-Have 3</span>
-                                    <h4>Provide emotionally positive feedback</h4>
-                                    <p>
-                                        The platform should reward effort with encouraging cues, visible progress,
-                                        and small moments of delight that strengthen confidence.
-                                    </p>
-                                </article>
-                            </div>
-                        </div>
-
-                        <div class="evidence-card reveal">
-                            <div class="subsection-heading evidence-heading reveal">
-                                <div>
-                                    <p class="section-tag">Evidence of Life</p>
-                                    <h3>Interview and site-observation media placeholders</h3>
-                                </div>
-                                <p>
-                                    This area will later hold five photos or short clips showing the group interviewing potential users,
-                                    observing the site, and documenting the context of use.
-                                </p>
-                            </div>
-
-                            <div class="evidence-gallery">
-                                <article class="evidence-item reveal">
-                                    <div class="evidence-media">Interview Photo 1</div>
-                                    <p>Short conversation with a student runner about joining barriers.</p>
-                                </article>
-
-                                <article class="evidence-item reveal">
-                                    <div class="evidence-media">Interview Photo 2</div>
-                                    <p>Discussion focused on safety expectations and confidence.</p>
-                                </article>
-
-                                <article class="evidence-item reveal">
-                                    <div class="evidence-media">Observation Photo 3</div>
-                                    <p>Current communication and participation touchpoints in use.</p>
-                                </article>
-
-                                <article class="evidence-item reveal">
-                                    <div class="evidence-media">Site Visit Photo 4</div>
-                                    <p>Environmental notes from the campus activity setting.</p>
-                                </article>
-
-                                <article class="evidence-item reveal">
-                                    <div class="evidence-media">Clip / Media 5</div>
-                                    <p>Reserved placeholder for a short clip or additional field media.</p>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="members" class="section">
-                <div class="section-heading reveal">
-                    <p class="section-tag">Group members</p>
-                    <h2>Meet our team</h2>
-                    <p>
-                        We are Information and Computing Science students.
-                    </p>
-                </div>
-
-                <div class="members-grid">
-                    <article class="member-card reveal">
-                        <div class="member-avatar avatar-a">LL</div>
-                        <div class="member-body">
-                            <h3>Leyi Li</h3>
-                            <p class="member-id">Student ID: 2362141</p>
-                            <p class="member-role">Role: Developer</p>
-                            <p class="member-bio">
-                                Leyi mainly works on code development, overall implementation, and front-end structure building.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="member-card reveal">
-                        <div class="member-avatar avatar-b">NX</div>
-                        <div class="member-body">
-                            <h3>Nuoqian Xu</h3>
-                            <p class="member-id">Student ID: 2363177</p>
-                            <p class="member-role">Role: UI Designer</p>
-                            <p class="member-bio">
-                                Nuoqian is responsible for interface design, visual layout, and overall user experience presentation.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="member-card reveal">
-                        <div class="member-avatar avatar-c">JH</div>
-                        <div class="member-body">
-                            <h3>Jinlong Huang</h3>
-                            <p class="member-id">Student ID: 2364343</p>
-                            <p class="member-role">Role: Research Analyst</p>
-                            <p class="member-bio">
-                                Jinlong focuses on persona development, requirement analysis, and related research support.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="member-card reveal">
-                        <div class="member-avatar avatar-d">SH</div>
-                        <div class="member-body">
-                            <h3>Shuheng Hu</h3>
-                            <p class="member-id">Student ID: 2362132</p>
-                            <p class="member-role">Role: Presentation Designer</p>
-                            <p class="member-bio">
-                                Shuheng is responsible for poster design, presentation preparation, and visual presentation materials.
-                            </p>
-                        </div>
+                    <article class="feature-card">
+                        <span class="pill-label">Visual Identity</span>
+                        <h3>Soft, editorial, and consistent</h3>
+                        <p>
+                            The portfolio keeps the HerRun pink/red palette, rounded card system, soft shadows, and
+                            polished feminine aesthetic across every page.
+                        </p>
                     </article>
                 </div>
             </section>
-
         </main>
 
-        <footer class="footer reveal">
+        <footer class="footer">
             <p>© 2026 CPT208 Group Portfolio.</p>
         </footer>
     </div>
-    <script>
-        window.addEventListener("DOMContentLoaded", () => {
-            const revealItems = document.querySelectorAll(".reveal");
-            const viewportTrigger = window.innerHeight * 0.92;
-
-            revealItems.forEach((item) => {
-                const rect = item.getBoundingClientRect();
-
-                if (rect.top < viewportTrigger) {
-                    item.classList.add("reveal-visible");
-                } else {
-                    item.classList.add("reveal-ready");
-                }
-            });
-
-            if ("IntersectionObserver" in window) {
-                const revealObserver = new IntersectionObserver((entries, observer) => {
-                    entries.forEach((entry) => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add("reveal-visible");
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, {
-                    threshold: 0.14,
-                    rootMargin: "0px 0px -8% 0px"
-                });
-
-                revealItems.forEach((item) => {
-                    if (!item.classList.contains("reveal-visible")) {
-                        revealObserver.observe(item);
-                    }
-                });
-            } else {
-                revealItems.forEach((item) => item.classList.add("reveal-visible"));
-            }
-        });
-    </script>
 </body>
 </html>
