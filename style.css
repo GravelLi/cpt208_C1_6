@@ -717,7 +717,7 @@ img {
 
 @media (max-width: 780px) {
     .page-shell {
-        padding: 84px 16px 30px;
+        padding: 84px 12px 30px;
     }
 
     .site-nav {
@@ -742,7 +742,36 @@ img {
     .hero-panel,
     .content-panel {
         border-radius: 28px;
-        padding: 24px 18px 30px;
+        padding: 24px 14px 30px;
+    }
+
+    .content-card,
+    .editorial-card,
+    .persona-card,
+    .media-card,
+    .before-after-card {
+        padding: 18px 14px;
+    }
+
+    .journey-frame,
+    .persona-image-wrap {
+        margin-inline: -6px;
+        border-radius: 14px;
+    }
+
+    .journey-frame {
+        padding: 8px;
+    }
+
+    .journey-frame img,
+    .persona-image-wrap img {
+        width: 100%;
+        height: auto;
+    }
+
+    .caption-text {
+        margin-top: 10px;
+        font-size: 0.92rem;
     }
 
     .hero-copy h1,
@@ -838,6 +867,10 @@ img {
 }
 
 @media (max-width: 540px) {
+    .page-shell {
+        padding: 82px 10px 26px;
+    }
+
     .brand {
         font-size: 0.9rem;
     }
@@ -871,5 +904,32 @@ img {
     .contribution-row,
     .before-after-card {
         border-radius: 22px;
+    }
+
+    .content-panel {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .content-card,
+    .editorial-card,
+    .persona-card,
+    .media-card,
+    .before-after-card {
+        padding: 16px 12px;
+    }
+
+    .journey-frame,
+    .persona-image-wrap {
+        margin-inline: -4px;
+    }
+
+    .persona-image-wrap {
+        border-radius: 10px;
+    }
+
+    .journey-frame {
+        border-radius: 12px;
+        padding: 6px;
     }
 }
