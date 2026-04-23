@@ -259,6 +259,17 @@ img {
     margin-top: 32px;
 }
 
+.page-cta {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 34px;
+    padding-top: 10px;
+}
+
+.page-cta .button {
+    min-width: 240px;
+}
+
 .button {
     display: inline-flex;
     align-items: center;
@@ -342,7 +353,6 @@ img {
 .evidence-grid,
 .sketch-grid-large,
 .architecture-grid,
-.contribution-table,
 .before-after-grid {
     display: grid;
     gap: 18px;
@@ -368,7 +378,6 @@ img {
 .persona-card,
 .media-card,
 .sketch-tile,
-.contribution-row,
 .before-after-card {
     border-radius: 22px;
     padding: 20px;
@@ -387,8 +396,7 @@ img {
 .feature-card h3,
 .comparison-card h3,
 .persona-card h3,
-.cta-card h3,
-.contribution-row h3 {
+.cta-card h3 {
     margin-top: 14px;
     font-size: 1.18rem;
     line-height: 1.25;
@@ -398,7 +406,6 @@ img {
 .mini-card p,
 .feature-card p,
 .comparison-card p,
-.contribution-row p,
 .media-card p,
 .cta-card p,
 .editorial-card p,
@@ -508,7 +515,6 @@ img {
 }
 
 .media-box,
-.sketch-tile,
 .architecture-box,
 .before-after-box {
     min-height: 160px;
@@ -522,6 +528,43 @@ img {
         #fff6f6;
     border: 1px dashed rgba(239, 93, 93, 0.28);
     color: var(--primary-deep);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.sketch-tile {
+    min-height: 0;
+    display: block;
+    padding: 14px;
+    text-align: center;
+}
+
+.sketch-image-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid rgba(244, 108, 108, 0.12);
+    background: rgba(255, 252, 252, 0.96);
+}
+
+.sketch-image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 280px;
+    background: #fffafa;
+}
+
+.sketch-label {
+    margin-top: 12px;
+    color: var(--primary-deep);
+    font-size: 0.9rem;
     font-weight: 800;
     letter-spacing: 0.04em;
 }
@@ -550,8 +593,61 @@ img {
     min-height: 180px;
 }
 
+.contribution-table-wrap {
+    overflow: hidden;
+    border-radius: 22px;
+    border: 1px solid rgba(244, 108, 108, 0.16);
+    background:
+        linear-gradient(180deg, rgba(255, 251, 251, 0.88), rgba(248, 228, 228, 0.98)),
+        var(--surface);
+    box-shadow: 0 12px 26px rgba(210, 102, 102, 0.09);
+}
+
 .contribution-table {
-    grid-template-columns: 1fr;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.contribution-table thead {
+    background: rgba(255, 241, 241, 0.88);
+}
+
+.contribution-table th,
+.contribution-table td {
+    padding: 16px 18px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.contribution-table th {
+    color: var(--primary-deep);
+    font-size: 0.86rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contribution-table td {
+    color: var(--muted);
+    font-size: 0.96rem;
+    border-top: 1px solid rgba(244, 108, 108, 0.12);
+}
+
+.contribution-table td:first-child {
+    width: 20%;
+    color: var(--text);
+    font-weight: 800;
+}
+
+.contribution-table td:nth-child(2) {
+    width: 26%;
+    color: var(--primary-deep);
+    font-weight: 700;
+}
+
+.contribution-table td:nth-child(3) {
+    width: 54%;
 }
 
 .reflection-block {
@@ -664,11 +760,80 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .contribution-table,
+    .contribution-table thead,
+    .contribution-table tbody,
+    .contribution-table tr,
+    .contribution-table th,
+    .contribution-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .contribution-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    .contribution-table-wrap {
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+        overflow: visible;
+    }
+
+    .contribution-table tr {
+        margin-top: 14px;
+        padding: 18px;
+        border-radius: 20px;
+        background:
+            linear-gradient(180deg, rgba(255, 251, 251, 0.88), rgba(248, 228, 228, 0.98)),
+            var(--surface);
+        border: 1px solid rgba(244, 108, 108, 0.16);
+        box-shadow: 0 12px 26px rgba(210, 102, 102, 0.09);
+    }
+
+    .contribution-table tr:first-child {
+        margin-top: 0;
+    }
+
+    .contribution-table td {
+        border-top: 0;
+        padding: 0;
+        margin-top: 12px;
+    }
+
+    .contribution-table td:first-child {
+        margin-top: 0;
+    }
+
+    .contribution-table td::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 4px;
+        color: var(--primary-deep);
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
     .media-box,
     .sketch-tile,
     .architecture-box,
     .before-after-box {
         min-height: 145px;
+    }
+
+    .sketch-image {
+        max-height: 300px;
     }
 }
 
@@ -685,6 +850,10 @@ img {
     .hero-actions {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .page-cta {
+        justify-content: stretch;
     }
 
     .hero-panel,
