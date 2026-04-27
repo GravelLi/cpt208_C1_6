@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HerRun | Home</title>
+    <script>
+        try {
+            if (localStorage.getItem("herRunIntroShown") === "true") {
+                document.documentElement.classList.add("intro-seen");
+            }
+        } catch (error) {
+            document.documentElement.classList.remove("intro-seen");
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="intro-screen" id="introScreen" aria-label="HerRun opening introduction">
+        <div class="intro-ripple" aria-hidden="true"></div>
+
+        <div class="intro-content">
+            <p class="intro-line">Start with your feeling, not with pressure.</p>
+
+            <div class="intro-route" aria-hidden="true">
+                <svg viewBox="0 0 540 132" role="img">
+                    <path class="route-path route-glow" d="M28 84 C86 52, 132 58, 178 80 C232 106, 260 37, 318 48 C382 60, 404 94, 512 62"></path>
+                    <path class="route-path route-main" id="introRoutePath" d="M28 84 C86 52, 132 58, 178 80 C232 106, 260 37, 318 48 C382 60, 404 94, 512 62"></path>
+                    <path class="route-highlight" d="M28 84 C86 52, 132 58, 178 80 C232 106, 260 37, 318 48 C382 60, 404 94, 512 62"></path>
+                    <circle class="route-end-dot" cx="466" cy="76" r="3.8"></circle>
+
+                    <g class="route-star route-star-1" transform="translate(176 80)">
+                        <path class="route-star-shape" d="M0 -10 L3 -3 L10 -2 L4 2 L6 9 L0 5 L-6 9 L-4 2 L-10 -2 L-3 -3 Z"></path>
+                    </g>
+                    <g class="route-star route-star-2" transform="translate(318 48)">
+                        <path class="route-star-shape" d="M0 -10 L3 -3 L10 -2 L4 2 L6 9 L0 5 L-6 9 L-4 2 L-10 -2 L-3 -3 Z"></path>
+                    </g>
+                    <g class="route-star route-star-3" transform="translate(440 78)">
+                        <path class="route-star-shape" d="M0 -10 L3 -3 L10 -2 L4 2 L6 9 L0 5 L-6 9 L-4 2 L-10 -2 L-3 -3 Z"></path>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="intro-brand-block">
+                <img class="intro-logo" src="images/Icon.png" alt="HerRun logo">
+                <h1>HerRun</h1>
+                <p>A supportive running experience shaped by emotion, safety, and connection.</p>
+            </div>
+
+            <button class="intro-button" id="introEnter" type="button">Explore HerRun</button>
+        </div>
+    </section>
+
     <div class="page-shell">
         <nav class="site-nav" aria-label="Main navigation">
             <div class="site-nav-inner">
@@ -123,5 +167,70 @@
             <p>© 2026 CPT208 Group C1-6 Portfolio.</p>
         </footer>
     </div>
+    <script>
+        const introScreen = document.getElementById("introScreen");
+        const introEnter = document.getElementById("introEnter");
+        const introRoutePaths = document.querySelectorAll(".route-main, .route-highlight");
+        const introStorageKey = "herRunIntroShown";
+        const introSteps = [
+            ["is-step-1", 100],
+            ["is-step-2", 950],
+            ["is-step-3", 2050],
+            ["is-step-4", 3350],
+            ["is-step-5", 4650]
+        ];
+
+        const hasSeenIntro = (() => {
+            try {
+                return localStorage.getItem(introStorageKey) === "true";
+            } catch (error) {
+                return false;
+            }
+        })();
+
+        if (hasSeenIntro) {
+            introScreen.setAttribute("hidden", "");
+        } else {
+            document.body.classList.add("intro-active");
+
+            introRoutePaths.forEach((path) => {
+                const routeLength = path.getTotalLength();
+                path.style.setProperty("--route-length", routeLength);
+                path.style.strokeDasharray = path.classList.contains("route-highlight")
+                    ? `42 ${routeLength}`
+                    : routeLength;
+                path.style.strokeDashoffset = routeLength;
+            });
+
+            introSteps.forEach(([className, delay]) => {
+                window.setTimeout(() => {
+                    introScreen.classList.add(className);
+
+                    if (className === "is-step-5") {
+                        introEnter.removeAttribute("disabled");
+                        introEnter.setAttribute("aria-hidden", "false");
+                    }
+                }, delay);
+            });
+
+            introEnter.setAttribute("disabled", "");
+            introEnter.setAttribute("aria-hidden", "true");
+
+            introEnter.addEventListener("click", () => {
+                try {
+                    localStorage.setItem(introStorageKey, "true");
+                } catch (error) {
+                    // Storage can be unavailable in private or restricted browsing modes.
+                }
+
+                introScreen.classList.add("is-leaving");
+                document.body.classList.remove("intro-active");
+
+                window.setTimeout(() => {
+                    introScreen.setAttribute("hidden", "");
+                }, 760);
+            });
+        }
+    </script>
 </body>
 </html>
