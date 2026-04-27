@@ -466,6 +466,21 @@ img {
     font-size: 0.94rem;
 }
 
+.list-block li strong {
+    display: block;
+    color: var(--text);
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.list-block li small {
+    display: block;
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: 0.9em;
+    line-height: 1.45;
+}
+
 .column-block {
     display: grid;
     gap: 16px;
