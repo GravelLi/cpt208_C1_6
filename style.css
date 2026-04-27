@@ -310,7 +310,7 @@ img {
 .persona-card,
 .mini-card,
 .media-card,
-.sketch-tile,
+.sketch-row-group,
 .cta-card,
 .contribution-row,
 .before-after-card {
@@ -377,7 +377,7 @@ img {
 .comparison-card,
 .persona-card,
 .media-card,
-.sketch-tile,
+.sketch-row-group,
 .before-after-card {
     border-radius: 22px;
     padding: 20px;
@@ -549,9 +549,18 @@ img {
 
 .sketch-tile {
     min-height: 0;
-    display: block;
-    padding: 14px;
+    display: grid;
+    align-content: start;
+    padding: 0;
     text-align: center;
+}
+
+.sketch-row-group {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    align-items: start;
+    padding: 14px;
 }
 
 .sketch-image-wrap {
@@ -561,8 +570,8 @@ img {
     width: fit-content;
     max-width: 100%;
     margin: 0 auto;
-    padding: 8px;
-    border-radius: 16px;
+    padding: 6px;
+    border-radius: 14px;
     border: 1px solid rgba(244, 108, 108, 0.12);
     background: rgba(255, 252, 252, 0.96);
 }
@@ -572,12 +581,12 @@ img {
     width: auto;
     max-width: 100%;
     height: auto;
-    max-height: 280px;
+    max-height: 260px;
     background: #fffafa;
 }
 
 .sketch-label {
-    margin-top: 12px;
+    margin-top: 7px;
     color: var(--primary-deep);
     font-size: 0.9rem;
     font-weight: 800;
@@ -590,7 +599,8 @@ img {
 }
 
 .sketch-grid-large {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+    gap: 16px;
 }
 
 .cta-card {
@@ -724,10 +734,6 @@ img {
     .media-card-wide {
         grid-column: span 1;
     }
-
-    .sketch-grid-large {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
 }
 
 @media (max-width: 780px) {
@@ -804,6 +810,10 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .sketch-row-group {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .contribution-table,
     .contribution-table thead,
     .contribution-table tbody,
@@ -870,14 +880,13 @@ img {
     }
 
     .media-box,
-    .sketch-tile,
     .architecture-box,
     .before-after-box {
         min-height: 145px;
     }
 
     .sketch-image {
-        max-height: 300px;
+        max-height: 280px;
     }
 }
 
@@ -914,7 +923,7 @@ img {
     .persona-card,
     .mini-card,
     .media-card,
-    .sketch-tile,
+    .sketch-row-group,
     .cta-card,
     .contribution-row,
     .before-after-card {
@@ -946,5 +955,15 @@ img {
     .journey-frame {
         border-radius: 12px;
         padding: 6px;
+    }
+
+    .sketch-row-group {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 14px;
+    }
+
+    .sketch-image {
+        max-height: 300px;
     }
 }
