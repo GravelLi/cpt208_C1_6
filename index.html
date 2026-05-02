@@ -6,7 +6,7 @@
     <title>HerRun | Home</title>
     <script>
         try {
-            if (localStorage.getItem("herRunIntroShown") === "true") {
+            if (sessionStorage.getItem("herRunIntroShown") === "true") {
                 document.documentElement.classList.add("intro-seen");
             }
         } catch (error) {
@@ -71,11 +71,11 @@
         </nav>
 
         <main class="page-main">
-            <section class="hero-panel page-enter">
-                <div class="hero-grid">
+            <section class="hero-panel home-overview page-enter" aria-labelledby="overview-title">
+                <div class="overview-hero-grid">
                     <div class="hero-copy">
-                        <p class="eyebrow">Human-Centric Computing Group Portfolio</p>
-                        <h1>A modern running platform for connection, safety, and organization</h1>
+                        <p class="eyebrow">Overview</p>
+                        <h1 id="overview-title">A modern running platform for connection, safety, and organization</h1>
                         <p class="lead">
                             HerRun is a university HCI portfolio about designing a running experience that feels safer,
                             more welcoming, and more playful for student communities, especially women runners balancing
@@ -88,43 +88,93 @@
                         </div>
                     </div>
 
-                    <aside class="hero-card">
-                        <span class="pill-label">Portfolio Map</span>
-                        <h2>Six independent pages document the full project journey</h2>
-                        <div class="mini-grid">
-                            <article class="mini-card">
-                                <span class="mini-kicker">1. Home</span>
-                                <p>Project overview and entry point into the portfolio.</p>
-                            </article>
-                            <article class="mini-card">
-                                <span class="mini-kicker">2. Research</span>
-                                <p>The Why, The Gap, and stakeholder understanding.</p>
-                            </article>
-                            <article class="mini-card">
-                                <span class="mini-kicker">3. Requirements</span>
-                                <p>User journey, playful conditions, and field evidence.</p>
-                            </article>
-                            <article class="mini-card">
-                                <span class="mini-kicker">4. Ideation</span>
-                                <p>Sketches, alternatives, and low-fi exploration.</p>
-                            </article>
-                            <article class="mini-card">
-                                <span class="mini-kicker">5. Technical</span>
-                                <p>Architecture, high-fi delivery, and contribution structure.</p>
-                            </article>
-                            <article class="mini-card">
-                                <span class="mini-kicker">6. Evaluation</span>
-                                <p>Testing results, refinement logic, and final reflection.</p>
-                            </article>
-                        </div>
-                    </aside>
+                    <div class="overview-grid">
+                        <article class="feature-card">
+                            <span class="pill-label">Project Direction</span>
+                            <h3>Human-centered and community-driven</h3>
+                            <p>
+                                HerRun focuses on women runners, student wellbeing, group coordination, playful motivation,
+                                and a stronger sense of trust before and during participation.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Portfolio Logic</span>
+                            <h3>From problem framing to reflection</h3>
+                            <p>
+                                Each page shows one major stage of the design process with meaningful placeholders so the site
+                                already feels complete and ready for later final project content.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Visual Identity</span>
+                            <h3>Soft, editorial, and consistent</h3>
+                            <p>
+                                The portfolio keeps the HerRun pink/red palette, rounded card system, soft shadows, and
+                                polished feminine aesthetic across every page.
+                            </p>
+                        </article>
+                    </div>
                 </div>
             </section>
 
-            <section class="content-panel team-section page-enter">
+            <section class="content-panel timeline-section page-enter" aria-labelledby="timeline-title">
+                <div class="section-heading timeline-heading">
+                    <p class="section-tag">Project Timeline</p>
+                    <h2 id="timeline-title">Project Timeline</h2>
+                    <p>
+                        This timeline summarizes how HerRun developed from early research and requirement discovery to ideation,
+                        prototyping, evaluation, and final refinement.
+                    </p>
+                </div>
+
+                <div class="timeline-frame" aria-label="Scrollable HerRun project timeline">
+                    <button class="timeline-image-button" id="timelineImageButton" type="button" aria-label="Enlarge project timeline">
+                        <img class="timeline-image" src="images/timeline_3.0.png" alt="HerRun project timeline from research through final refinement">
+                    </button>
+                </div>
+            </section>
+
+            <section class="content-panel portfolio-map-section page-enter" aria-labelledby="portfolio-map-title">
+                <div class="section-heading">
+                    <p class="section-tag">Portfolio Map</p>
+                    <h2 id="portfolio-map-title">Six independent pages document the full project journey</h2>
+                    <p>Each page focuses on one phase of the HerRun process and keeps the story clearer for review.</p>
+                </div>
+
+                <div class="mini-grid portfolio-map-grid">
+                    <article class="mini-card">
+                        <span class="mini-kicker">1. Home</span>
+                        <p>Project overview and entry point into the portfolio.</p>
+                    </article>
+                    <article class="mini-card">
+                        <span class="mini-kicker">2. Research</span>
+                        <p>The Why, The Gap, and stakeholder understanding.</p>
+                    </article>
+                    <article class="mini-card">
+                        <span class="mini-kicker">3. Requirements</span>
+                        <p>User journey, playful conditions, and field evidence.</p>
+                    </article>
+                    <article class="mini-card">
+                        <span class="mini-kicker">4. Ideation</span>
+                        <p>Sketches, alternatives, and low-fi exploration.</p>
+                    </article>
+                    <article class="mini-card">
+                        <span class="mini-kicker">5. Technical</span>
+                        <p>Architecture, high-fi delivery, and contribution structure.</p>
+                    </article>
+                    <article class="mini-card">
+                        <span class="mini-kicker">6. Evaluation</span>
+                        <p>Testing results, refinement logic, and final reflection.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-panel team-section page-enter" aria-labelledby="team-title">
                 <div class="section-heading team-heading">
-                    <p class="section-tag">Our Team</p>
-                    <h2>Meet the Team</h2>
+                    <p class="section-tag">Team Members</p>
+                    <h2 id="team-title">Team Members</h2>
                     <p>The four group members behind the HerRun portfolio and product concept.</p>
                 </div>
 
@@ -162,48 +212,20 @@
                     </article>
                 </div>
             </section>
-
-            <section class="content-panel page-enter">
-                <div class="section-heading">
-                    <p class="section-tag">Overview</p>
-                    <h2>What this portfolio is trying to show</h2>
-                    <p>
-                        This website is structured as a true multi-page portfolio so each major part of the project can
-                        stand on its own. Instead of forcing everything into one long scroll, each page focuses on one
-                        phase of the HerRun process and keeps the story clearer for review.
-                    </p>
-                </div>
-
-                <div class="overview-grid">
-                    <article class="feature-card">
-                        <span class="pill-label">Project Direction</span>
-                        <h3>Human-centered and community-driven</h3>
-                        <p>
-                            HerRun focuses on women runners, student wellbeing, group coordination, playful motivation,
-                            and a stronger sense of trust before and during participation.
-                        </p>
-                    </article>
-
-                    <article class="feature-card">
-                        <span class="pill-label">Portfolio Logic</span>
-                        <h3>From problem framing to reflection</h3>
-                        <p>
-                            Each page shows one major stage of the design process with meaningful placeholders so the site
-                            already feels complete and ready for later final project content.
-                        </p>
-                    </article>
-
-                    <article class="feature-card">
-                        <span class="pill-label">Visual Identity</span>
-                        <h3>Soft, editorial, and consistent</h3>
-                        <p>
-                            The portfolio keeps the HerRun pink/red palette, rounded card system, soft shadows, and
-                            polished feminine aesthetic across every page.
-                        </p>
-                    </article>
-                </div>
-            </section>
         </main>
+
+        <div class="timeline-lightbox" id="timelineLightbox" role="dialog" aria-modal="true" aria-labelledby="timelineLightboxTitle" hidden>
+            <button class="timeline-lightbox-backdrop" type="button" data-timeline-close aria-label="Close timeline enlargement"></button>
+            <div class="timeline-lightbox-panel">
+                <div class="timeline-lightbox-header">
+                    <h2 id="timelineLightboxTitle">Project Timeline</h2>
+                    <button class="timeline-lightbox-close" type="button" data-timeline-close aria-label="Close timeline enlargement">Close</button>
+                </div>
+                <div class="timeline-lightbox-scroll">
+                    <img src="images/timeline_3.0.png" alt="HerRun project timeline from research through final refinement">
+                </div>
+            </div>
+        </div>
 
         <footer class="footer">
             <p>© 2026 CPT208 Group C1-6 Portfolio.</p>
@@ -224,7 +246,7 @@
 
         const hasSeenIntro = (() => {
             try {
-                return localStorage.getItem(introStorageKey) === "true";
+                return sessionStorage.getItem(introStorageKey) === "true";
             } catch (error) {
                 return false;
             }
@@ -260,7 +282,7 @@
 
             introEnter.addEventListener("click", () => {
                 try {
-                    localStorage.setItem(introStorageKey, "true");
+                    sessionStorage.setItem(introStorageKey, "true");
                 } catch (error) {
                     // Storage can be unavailable in private or restricted browsing modes.
                 }
@@ -271,6 +293,52 @@
                 window.setTimeout(() => {
                     introScreen.setAttribute("hidden", "");
                 }, 760);
+            });
+        }
+
+        const timelineImageButton = document.getElementById("timelineImageButton");
+        const timelineLightbox = document.getElementById("timelineLightbox");
+        const timelineCloseButtons = document.querySelectorAll("[data-timeline-close]");
+        let timelineLastFocus = null;
+
+        const openTimelineLightbox = () => {
+            if (!timelineLightbox) {
+                return;
+            }
+
+            timelineLastFocus = document.activeElement;
+            timelineLightbox.removeAttribute("hidden");
+            document.body.classList.add("timeline-lightbox-open");
+
+            const closeButton = timelineLightbox.querySelector(".timeline-lightbox-close");
+            if (closeButton) {
+                closeButton.focus();
+            }
+        };
+
+        const closeTimelineLightbox = () => {
+            if (!timelineLightbox || timelineLightbox.hasAttribute("hidden")) {
+                return;
+            }
+
+            timelineLightbox.setAttribute("hidden", "");
+            document.body.classList.remove("timeline-lightbox-open");
+
+            if (timelineLastFocus && typeof timelineLastFocus.focus === "function") {
+                timelineLastFocus.focus();
+            }
+        };
+
+        if (timelineImageButton && timelineLightbox) {
+            timelineImageButton.addEventListener("click", openTimelineLightbox);
+            timelineCloseButtons.forEach((button) => {
+                button.addEventListener("click", closeTimelineLightbox);
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape") {
+                    closeTimelineLightbox();
+                }
             });
         }
     </script>

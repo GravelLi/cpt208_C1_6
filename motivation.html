@@ -159,7 +159,12 @@
                             </div>
                             <div class="comparison-grid">
                                 <article class="comparison-card">
-                                    <h3>Product 1: Nike Run Club</h3>
+                                    <div class="product-card-header">
+                                        <h3>Product 1: Nike Run Club</h3>
+                                        <span class="product-logo-frame">
+                                            <img class="product-logo" src="images/NRC.jpg" alt="Nike Run Club logo">
+                                        </span>
+                                    </div>
                                     <div class="list-block">
                                         <span>Did well</span>
                                         <ul>
@@ -178,7 +183,12 @@
                                     </div>
                                 </article>
                                 <article class="comparison-card">
-                                    <h3>Product 2: Strava</h3>
+                                    <div class="product-card-header">
+                                        <h3>Product 2: Strava</h3>
+                                        <span class="product-logo-frame">
+                                            <img class="product-logo" src="images/Strava.jpeg" alt="Strava logo">
+                                        </span>
+                                    </div>
                                     <div class="list-block">
                                         <span>Did well</span>
                                         <ul>
@@ -197,7 +207,12 @@
                                     </div>
                                 </article>
                                 <article class="comparison-card">
-                                    <h3>Product 3: Keep</h3>
+                                    <div class="product-card-header">
+                                        <h3>Product 3: Keep</h3>
+                                        <span class="product-logo-frame">
+                                            <img class="product-logo" src="images/Keep.jpg" alt="Keep logo">
+                                        </span>
+                                    </div>
                                     <div class="list-block">
                                         <span>Did well</span>
                                         <ul>
@@ -216,7 +231,12 @@
                                     </div>
                                 </article>
                                 <article class="comparison-card">
-                                    <h3>Product 4: Gudong</h3>
+                                    <div class="product-card-header">
+                                        <h3>Product 4: Gudong</h3>
+                                        <span class="product-logo-frame">
+                                            <img class="product-logo" src="images/Gudong.jpeg" alt="Gudong logo">
+                                        </span>
+                                    </div>
                                     <div class="list-block">
                                         <span>Did well</span>
                                         <ul>
@@ -237,6 +257,92 @@
                             </div>
                         </div>
                     </div>
+                </section>
+
+                <section class="content-card gap-to-design">
+                    <div class="gap-transition-copy">
+                        <p class="section-tag">From Gap to Design</p>
+                        <h2>The research gap becomes a design response</h2>
+                        <p>
+                            The comparison above revealed a repeated gap: existing tools support tracking and training well,
+                            but give less attention to mood, low-pressure participation, women-centred safety, and supportive
+                            social connection.
+                        </p>
+                    </div>
+
+                    <article class="herrun-design-card" id="herrun-design">
+                        <div class="herrun-design-heading">
+                            <div class="herrun-design-heading-copy">
+                                <p class="section-tag">HerRun Design</p>
+                                <h2>HerRun Design</h2>
+                                <p>
+                                    A research-informed direction shaped by academic papers, commercial product gaps, and persona needs.
+                                </p>
+                            </div>
+
+                            <div class="gap-design-slider" data-gap-design-slider style="--progress-percent: 0%;">
+                                <div class="slider-instruction">
+                                    <span>Drag insight arrow</span>
+                                    <small>Tap a dot to jump</small>
+                                </div>
+
+                                <div class="insight-track-shell">
+                                    <div class="insight-track" data-insight-track>
+                                        <div class="insight-fill" aria-hidden="true"></div>
+
+                                        <button class="insight-dot" style="--dot-position: 25%;" type="button" data-progress="0.25" aria-label="Reveal Mood-aware support">
+                                            <span>1</span>
+                                        </button>
+                                        <button class="insight-dot" style="--dot-position: 50%;" type="button" data-progress="0.5" aria-label="Reveal Low-pressure participation">
+                                            <span>2</span>
+                                        </button>
+                                        <button class="insight-dot" style="--dot-position: 75%;" type="button" data-progress="0.75" aria-label="Reveal Women-centred safety and trust">
+                                            <span>3</span>
+                                        </button>
+                                        <button class="insight-dot" style="--dot-position: 100%;" type="button" data-progress="1" aria-label="Reveal Supportive social connection">
+                                            <span>4</span>
+                                        </button>
+
+                                        <button class="insight-handle" type="button" data-insight-handle role="slider" aria-label="Drag the insight arrow to reveal HerRun design principles" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0" aria-valuetext="Start: drag to reveal how the gap shaped HerRun">
+                                            <span class="insight-handle-core" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="insight-output" data-insight-output aria-live="polite">
+                            <article class="insight-panel insight-hint-panel" data-insight-hint>
+                                <span>Start</span>
+                                <h3>Drag the insight arrow</h3>
+                                <p>Drag the insight arrow to reveal how the gap shaped HerRun.</p>
+                            </article>
+
+                            <article class="insight-panel" data-index="0">
+                                <span>01</span>
+                                <h3>Mood-aware support</h3>
+                                <p>Academic papers showed that exercise participation is shaped by motivation, confidence, stress, and emotional recovery. HerRun therefore treats mood as part of the running experience rather than only tracking physical performance.</p>
+                            </article>
+
+                            <article class="insight-panel" data-index="1">
+                                <span>02</span>
+                                <h3>Low-pressure participation</h3>
+                                <p>Commercial products such as NRC, Strava, Keep, and Gudong offer strong training, tracking, and challenge systems, but many of them still emphasize performance, competition, or complex feature sets. HerRun responds by making running feel lighter, more flexible, and less judgmental.</p>
+                            </article>
+
+                            <article class="insight-panel" data-index="2">
+                                <span>03</span>
+                                <h3>Women-centred safety and trust</h3>
+                                <p>Research and personas both highlighted the importance of safety, confidence, and comfort for women runners. HerRun therefore prioritizes safer solo running, supportive group participation, and health-aware design cues.</p>
+                            </article>
+
+                            <article class="insight-panel" data-index="3">
+                                <span>04</span>
+                                <h3>Supportive social connection</h3>
+                                <p>Personas helped translate broad research findings into concrete needs for companionship, event visibility, and organizer coordination. HerRun uses social connection as emotional support, not as a leaderboard-driven pressure system.</p>
+                            </article>
+                        </div>
+                    </article>
                 </section>
 
                 <section class="content-card">
@@ -280,5 +386,240 @@
             <p>© 2026 CPT208 Group C1-6 Portfolio.</p>
         </footer>
     </div>
+    <script>
+        const gapDesignSection = document.querySelector(".gap-to-design");
+        const gapDesignSlider = document.querySelector("[data-gap-design-slider]");
+
+        if (gapDesignSection && gapDesignSlider) {
+            const track = gapDesignSlider.querySelector("[data-insight-track]");
+            const handle = gapDesignSlider.querySelector("[data-insight-handle]");
+            const dots = Array.from(gapDesignSlider.querySelectorAll(".insight-dot"));
+            const hintPanel = gapDesignSection.querySelector("[data-insight-hint]");
+            const panels = Array.from(gapDesignSection.querySelectorAll(".insight-panel[data-index]"));
+            const milestones = [0.25, 0.5, 0.75, 1];
+            const allStops = [0, ...milestones];
+            const labels = [
+                "Start: drag to reveal how the gap shaped HerRun",
+                "Mood-aware support",
+                "Low-pressure participation",
+                "Women-centred safety and trust",
+                "Supportive social connection"
+            ];
+            let progress = 0;
+            let isDragging = false;
+            let queuedProgress = null;
+            let dragFrame = null;
+            let confirmationTimer = null;
+
+            gapDesignSection.classList.add("is-enhanced");
+
+            const clamp = (value) => Math.min(1, Math.max(0, value));
+
+            const getNearestStop = (value) => allStops.reduce((nearest, stop) => {
+                return Math.abs(stop - value) < Math.abs(nearest - value) ? stop : nearest;
+            }, allStops[0]);
+
+            const getActiveIndex = (value) => {
+                if (value < milestones[0] / 2) {
+                    return -1;
+                }
+
+                return milestones.reduce((nearestIndex, stop, index) => {
+                    const nearestDistance = Math.abs(milestones[nearestIndex] - value);
+                    const currentDistance = Math.abs(stop - value);
+                    return currentDistance < nearestDistance ? index : nearestIndex;
+                }, 0);
+            };
+
+            const getActiveDotIndex = (value, shouldSnap = false) => {
+                const threshold = shouldSnap ? 0.001 : 0.035;
+                const nearestIndex = milestones.reduce((nearestIndex, stop, index) => {
+                    const nearestDistance = Math.abs(milestones[nearestIndex] - value);
+                    const currentDistance = Math.abs(stop - value);
+                    return currentDistance < nearestDistance ? index : nearestIndex;
+                }, 0);
+
+                return Math.abs(milestones[nearestIndex] - value) <= threshold ? nearestIndex : -1;
+            };
+
+            const confirmArrival = (activeIndex) => {
+                if (activeIndex < 0) {
+                    return;
+                }
+
+                gapDesignSlider.classList.remove("is-confirming");
+                window.clearTimeout(confirmationTimer);
+
+                window.requestAnimationFrame(() => {
+                    gapDesignSlider.classList.add("is-confirming");
+                    confirmationTimer = window.setTimeout(() => {
+                        gapDesignSlider.classList.remove("is-confirming");
+                    }, 360);
+                });
+            };
+
+            const setPanelState = (panel, opacity) => {
+                panel.style.setProperty("--panel-opacity", opacity.toFixed(3));
+                panel.style.setProperty("--panel-shift", `${(1 - opacity) * 14}px`);
+                panel.classList.toggle("is-readable", opacity > 0.6);
+            };
+
+            const updatePanels = (value) => {
+                if (!hintPanel) {
+                    return;
+                }
+
+                const firstStop = milestones[0];
+                const hintOpacity = value < firstStop ? 1 - value / firstStop : 0;
+                const firstOpacityBeforeStop = value < firstStop ? value / firstStop : 0;
+
+                setPanelState(hintPanel, hintOpacity);
+                panels.forEach((panel) => setPanelState(panel, 0));
+
+                if (value < firstStop) {
+                    setPanelState(panels[0], firstOpacityBeforeStop);
+                    return;
+                }
+
+                for (let index = 0; index < milestones.length; index += 1) {
+                    const currentStop = milestones[index];
+                    const nextStop = milestones[index + 1];
+
+                    if (!nextStop || value <= nextStop) {
+                        const segmentProgress = nextStop
+                            ? clamp((value - currentStop) / (nextStop - currentStop))
+                            : 0;
+                        setPanelState(panels[index], 1 - segmentProgress);
+
+                        if (nextStop && panels[index + 1]) {
+                            setPanelState(panels[index + 1], segmentProgress);
+                        }
+                        return;
+                    }
+                }
+            };
+
+            const updateSlider = (value, shouldSnap = false) => {
+                progress = clamp(shouldSnap ? getNearestStop(value) : value);
+                gapDesignSlider.style.setProperty("--progress-percent", `${progress * 100}%`);
+                updatePanels(progress);
+
+                const activeIndex = getActiveIndex(progress);
+                const activeDotIndex = getActiveDotIndex(progress, shouldSnap);
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle("is-active", index === activeDotIndex);
+                    dot.setAttribute("aria-current", index === activeDotIndex ? "step" : "false");
+                });
+
+                if (handle) {
+                    handle.setAttribute("aria-valuenow", String(activeIndex + 1));
+                    handle.setAttribute("aria-valuetext", labels[activeIndex + 1] || labels[0]);
+                }
+
+                if (shouldSnap) {
+                    confirmArrival(activeDotIndex);
+                }
+            };
+
+            const scheduleDragUpdate = (value) => {
+                queuedProgress = value;
+
+                if (dragFrame) {
+                    return;
+                }
+
+                dragFrame = window.requestAnimationFrame(() => {
+                    updateSlider(queuedProgress);
+                    queuedProgress = null;
+                    dragFrame = null;
+                });
+            };
+
+            const progressFromPointer = (event) => {
+                const rect = track.getBoundingClientRect();
+                return clamp((event.clientX - rect.left) / rect.width);
+            };
+
+            const startDrag = (event) => {
+                if (event.target.closest(".insight-dot")) {
+                    return;
+                }
+
+                isDragging = true;
+                gapDesignSlider.classList.add("is-dragging");
+                track.setPointerCapture(event.pointerId);
+                updateSlider(progressFromPointer(event));
+            };
+
+            const moveDrag = (event) => {
+                if (!isDragging) {
+                    return;
+                }
+
+                scheduleDragUpdate(progressFromPointer(event));
+            };
+
+            const endDrag = (event) => {
+                if (!isDragging) {
+                    return;
+                }
+
+                isDragging = false;
+                gapDesignSlider.classList.remove("is-dragging");
+                if (track.hasPointerCapture(event.pointerId)) {
+                    track.releasePointerCapture(event.pointerId);
+                }
+                if (dragFrame) {
+                    window.cancelAnimationFrame(dragFrame);
+                    dragFrame = null;
+                }
+                if (queuedProgress !== null) {
+                    updateSlider(queuedProgress);
+                    queuedProgress = null;
+                }
+                updateSlider(progress, true);
+            };
+
+            if (track && handle) {
+                track.addEventListener("pointerdown", startDrag);
+                track.addEventListener("pointermove", moveDrag);
+                track.addEventListener("pointerup", endDrag);
+                track.addEventListener("pointercancel", endDrag);
+
+                dots.forEach((dot) => {
+                    dot.addEventListener("click", () => {
+                        updateSlider(Number(dot.dataset.progress), true);
+                        handle.focus();
+                    });
+                });
+
+                handle.addEventListener("keydown", (event) => {
+                    const currentStopIndex = allStops.indexOf(getNearestStop(progress));
+                    let nextStopIndex = currentStopIndex;
+
+                    if (event.key === "ArrowRight" || event.key === "ArrowUp") {
+                        nextStopIndex = Math.min(allStops.length - 1, currentStopIndex + 1);
+                    } else if (event.key === "ArrowLeft" || event.key === "ArrowDown") {
+                        nextStopIndex = Math.max(0, currentStopIndex - 1);
+                    } else if (event.key === "Home") {
+                        nextStopIndex = 0;
+                    } else if (event.key === "End") {
+                        nextStopIndex = allStops.length - 1;
+                    } else if (event.key === "Enter" || event.key === " ") {
+                        updateSlider(progress, true);
+                        event.preventDefault();
+                        return;
+                    } else {
+                        return;
+                    }
+
+                    event.preventDefault();
+                    updateSlider(allStops[nextStopIndex], true);
+                });
+
+                updateSlider(0);
+            }
+        }
+    </script>
 </body>
 </html>
