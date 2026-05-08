@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerRun | AI Coding Logs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="ai-logs-page">
+    <div class="ambient-scene" aria-hidden="true">
+        <span class="ambient-glow glow-a"></span>
+        <span class="ambient-glow glow-b"></span>
+        <span class="ambient-glow glow-c"></span>
+        <span class="ambient-route route-a"></span>
+        <span class="ambient-route route-b"></span>
+        <span class="ambient-route route-c"></span>
+        <span class="ambient-shape ambient-star star-a"></span>
+        <span class="ambient-shape ambient-star star-b"></span>
+        <span class="ambient-shape ambient-star star-c"></span>
+        <span class="ambient-shape ambient-star star-d"></span>
+        <span class="ambient-shape ambient-star star-e"></span>
+        <span class="ambient-shape ambient-moon moon-a"></span>
+        <span class="ambient-shape ambient-moon moon-b"></span>
+        <span class="ambient-shape ambient-moon moon-c"></span>
+        <span class="ambient-shape ambient-sparkle sparkle-a"></span>
+        <span class="ambient-shape ambient-sparkle sparkle-b"></span>
+        <span class="ambient-shape ambient-sparkle sparkle-c"></span>
+        <span class="ambient-shape ambient-sparkle sparkle-d"></span>
+        <span class="ambient-shape ambient-sparkle sparkle-e"></span>
+        <span class="ambient-dot dot-a"></span>
+        <span class="ambient-dot dot-b"></span>
+        <span class="ambient-dot dot-c"></span>
+        <span class="ambient-dot dot-d"></span>
+    </div>
+
+    <div class="page-shell">
+        <nav class="site-nav" aria-label="Main navigation">
+            <div class="site-nav-inner">
+                <a class="brand" href="index.html">
+                    <img class="brand-mark" src="images/Icon.png" alt="HerRun logo">
+                    <span>HerRun</span>
+                </a>
+
+                <div class="nav-links">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="motivation.html">Motivation &amp; Research</a>
+                    <a class="nav-link" href="requirements.html">User Requirements</a>
+                    <a class="nav-link" href="ideation.html">Ideation &amp; Alternatives</a>
+                    <a class="nav-link is-active" href="technical.html">Technical Implementation</a>
+                    <a class="nav-link" href="evaluation.html">Evaluation &amp; Reflection</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="page-main">
+            <section class="content-panel subpage-panel page-enter">
+                <div class="section-heading">
+                    <p class="section-tag">AI Coding Logs</p>
+                    <h1 class="page-title">Selected prompts used during HerRun development</h1>
+                    <p>
+                        This page shows selected prompts we used when developing the HerRun prototype with ChatGPT.
+                        ChatGPT mainly helped with coding, debugging, layout changes, and small wording changes.
+                        We checked and edited the generated code before using it in the final prototype.
+                    </p>
+                </div>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 1</p>
+                        <h2>Homepage layout</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Create a mobile homepage for a running app called HerRun. The page should look like a real phone app.
+                            It needs today's goal, current mood, health signal, cycle reminder, a simple running plan, and a reward area.
+                            Use warm red, peach, cream, and orange colours. Make the cards rounded and clean.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 2</p>
+                        <h2>Today's Goal logic</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Help me create JavaScript logic for the Today's Goal section. The goal title, goal description,
+                            mood text, health text, and cycle reminder should change based on the user's saved cycle record.
+                            Keep the code simple because this is only a front-end prototype.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 3</p>
+                        <h2>Cycle Calendar page</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Create a mobile Cycle Calendar page for HerRun. It should have a monthly calendar, period days,
+                            predicted period days, selected date area, cycle summary, and smart reminder. The style should match the homepage.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 4</p>
+                        <h2>Save cycle record</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Help me save the selected cycle option with LocalStorage. After the user clicks Save,
+                            the option should still be saved when they leave the page and come back later.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 5</p>
+                        <h2>Running page layout</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Create a mobile running page for HerRun. It should include a destination search bar, route status card,
+                            map area, Music button, Match button, SOS button, and running controls. Keep everything inside the phone frame.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 6</p>
+                        <h2>Start, pause, and finish run</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Help me implement Start, Pause, and Finish logic for the running page. When the user clicks Start,
+                            the timer, distance, pace, and heart rate should start changing. When the user clicks Pause, they should stop changing.
+                            When the user clicks Finish, the run should stop and the buddy and route display should reset properly.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 7</p>
+                        <h2>SOS interaction</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Help me improve the SOS button. When the user clicks it, show a confirmation overlay first.
+                            The overlay should have Confirm and Cancel buttons. It should be clear, but it should still match the HerRun style.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 8</p>
+                        <h2>Match buddy feature</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Create a Match button interaction. When the user clicks Match, the app should simulate finding a running buddy nearby.
+                            The button or overlay should change to show that a buddy has been matched.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 9</p>
+                        <h2>Music panel</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Create a music panel for the running page. It should include music categories, track list, play / pause,
+                            previous / next, and playback mode buttons. The panel should look like part of the app and open when the user taps Music.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 10</p>
+                        <h2>Adaptive music toggle</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Add an adaptive music toggle to the music panel. It should be turned off by default.
+                            When it is on, the app can recommend music based on the simulated heart rate.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 11</p>
+                        <h2>Health Data page</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Create a mobile Health Data page for HerRun. It should show average heart rate, resting heart rate,
+                            recovery score, average pace, body fat rate, sleep, calories, and a 7-day trend.
+                            Make it look like data from a wearable device.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading ai-prompt-heading">
+                        <p class="section-tag">Prompt 12</p>
+                        <h2>Fix mobile overflow</h2>
+                    </div>
+
+                    <div class="ai-log-block">
+                        <p>
+                            Some pages go beyond the bottom of the phone frame. Please help me fix this with CSS.
+                            I want the main content to scroll inside the frame instead of overflowing outside.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card compact-info-card">
+                    <h2>Full prompt log in the repository</h2>
+
+                    <p class="compact-info-text">
+                        This page only shows selected prompts used for the main software development process.
+                        The full record is available in the project repository under
+                        <strong>ai-logs/chatgpt-prompts.md</strong>.
+                        <a class="inline-log-button" href="ai-logs/chatgpt-prompts.md">
+                            View Full Prompt Log
+                        </a>
+                    </p>
+                </section>
+
+                <div class="page-cta page-cta-paired">
+                    <a class="button button-secondary" href="technical.html">Back to Technical Implementation</a>
+                    <a class="button button-primary" href="evaluation.html">Go To Evaluation &amp; Reflection</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 CPT208 Group C1-6 Portfolio.</p>
+        </footer>
+    </div>
+</body>
+</html>

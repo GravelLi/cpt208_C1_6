@@ -32,6 +32,7 @@
         <span class="ambient-dot dot-c"></span>
         <span class="ambient-dot dot-d"></span>
     </div>
+
     <div class="page-shell">
         <nav class="site-nav" aria-label="Main navigation">
             <div class="site-nav-inner">
@@ -39,6 +40,7 @@
                     <img class="brand-mark" src="images/Icon.png" alt="HerRun logo">
                     <span>HerRun</span>
                 </a>
+
                 <div class="nav-links">
                     <a class="nav-link" href="index.html">Home</a>
                     <a class="nav-link" href="motivation.html">Motivation &amp; Research</a>
@@ -54,10 +56,12 @@
             <section class="content-panel subpage-panel page-enter">
                 <div class="section-heading">
                     <p class="section-tag">Technical Implementation</p>
-                    <h1 class="page-title">Translating the concept into architecture, delivery, and team ownership</h1>
+                    <h1 class="page-title">Building HerRun as a mobile-first, body-aware running web app</h1>
                     <p>
-                        This page reserves space for system-level explanation, the high-fi prototype or hosted build,
-                        and a clear record of individual contributions.
+                        This page explains how HerRun was implemented as an interactive web prototype.
+                        The system translates our women-centred running concept into working interface logic,
+                        including personalised daily goals, cycle-aware running adjustment, safety support,
+                        route-based running interaction, adaptive music, and wearable-style health feedback.
                     </p>
                 </div>
 
@@ -65,16 +69,13 @@
                     <div class="subsection-heading">
                         <div>
                             <p class="section-tag">System Architecture</p>
-                            <h2>Featured placeholder for the final architecture diagram</h2>
+                            <h2>System Sequence Diagram</h2>
                         </div>
-                        <p>This large panel is reserved for the future architecture visual showing platform layers, logic, and data flow.</p>
+                        <p>The sequence diagram below illustrates the platform layers, logic, and data flow within the HerRun system.</p>
                     </div>
 
-                    <div class="architecture-grid">
-                        <div class="architecture-box">User Interface Layer</div>
-                        <div class="architecture-box">Community &amp; Event Coordination</div>
-                        <div class="architecture-box">Safety &amp; Tracking Logic</div>
-                        <div class="architecture-box">Storage / Service Integration</div>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <img src="images/herrun_sequence_diagram.png" alt="HerRun System Sequence Diagram" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.12);">
                     </div>
                 </section>
 
@@ -83,8 +84,13 @@
                         <div class="subsection-heading subsection-heading-compact">
                             <div>
                                 <p class="section-tag">High-Fi Prototype</p>
-                                <h2>Open the given URL to explore the final interactive experience.</h2>
+                                <h2>Open the final interactive HerRun web app</h2>
                             </div>
+                            <p>
+                                The high-fi prototype is deployed as a public web application through GitHub Pages.
+                                It is designed for mobile use and demonstrates the main user journey from homepage
+                                to running, cycle logging, health data, and profile management.
+                            </p>
                         </div>
 
                         <a
@@ -95,8 +101,8 @@
                             aria-label="Open the final HerRun product webpage"
                         >
                             <span class="unlock-label">
-                                <span class="unlock-word">FIND</span>
-                                <span class="unlock-me">ME AT</span>
+                                <span class="unlock-word">LIVE</span>
+                                <span class="unlock-me">URL</span>
                                 <span>:</span>
                             </span>
                             <span class="unlock-url">https://gravelli.github.io/cpt208/</span>
@@ -104,49 +110,158 @@
                     </section>
 
                     <section class="content-card">
-                        <div class="subsection-heading">
+                        <div class="subsection-heading subsection-heading-compact">
                             <div>
-                                <p class="section-tag">Individual Contributions</p>
-                                <h2>Structured contribution record for the four team members</h2>
+                                <p class="section-tag">Source Repository</p>
+                                <h2>Code repository and implementation files</h2>
                             </div>
-                            <p>This table documents the role and specific responsibilities of each member in the HerRun portfolio and product work.</p>
+                            <p>
+                                The repository contains the web pages, CSS files, JavaScript interaction logic,
+                                image assets, audio assets, and README documentation for the prototype.
+                            </p>
                         </div>
 
-                        <div class="contribution-table-wrap">
-                            <table class="contribution-table">
-                                <thead>
-                                    <tr>
-                                        <th>Team member</th>
-                                        <th>Role</th>
-                                        <th>Specific Contributions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-label="Team member">Leyi Li</td>
-                                        <td data-label="Role">Front-end designer, Portfolio developer</td>
-                                        <td data-label="Specific Contributions">Responsible for all the implementation of the product's front-end and the basic setup of the portfolio.</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Team member">Nuoqian Xu</td>
-                                        <td data-label="Role">Researcher, Solution designer</td>
-                                        <td data-label="Specific Contributions">Responsible for researching how to address the actual pain points of users and sketching out the early designs of the product.</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Team member">Jinlong Huang</td>
-                                        <td data-label="Role">Researcher, Requirement Analyzer</td>
-                                        <td data-label="Specific Contributions">Responsible for the collection, research, analysis of user data, the improvement of the portfolio, and the layout of the posters.</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Team member">Shuheng Hu</td>
-                                        <td data-label="Role">Poster developer, tester</td>
-                                        <td data-label="Specific Contributions">Responsible for the overall content creation of the poster, as well as subsequent A/B testing and product evaluation.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <a
+                            class="unlock-link-card source-link-card"
+                            href="https://github.com/GravelLi/cpt208"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open the HerRun GitHub repository"
+                        >
+                            <span class="unlock-label">
+                                <span class="unlock-word">SOURCE</span>
+                                <span class="unlock-me">CODE</span>
+                                <span>:</span>
+                            </span>
+                            <span class="unlock-url">https://github.com/GravelLi/cpt208</span>
+                        </a>
                     </section>
-                </div>
+                </div>       
+                
+                <section class="content-card">
+                    <div class="subsection-heading">
+                        <div>
+                            <p class="section-tag">AI Logs</p>
+                            <h2>Prompt record for AI-assisted coding</h2>
+                        </div>
+                        <p>
+                            We used ChatGPT mainly for coding support, debugging, layout changes, and small wording changes
+                            during the HerRun prototype development. The full prompt record is kept in the repository.
+                        </p>
+                    </div>
+
+                    <div class="split-grid">
+                        <article class="feature-card">
+                            <span class="pill-label">Prompt Examples</span>
+                            <h3>Prompts used for app development</h3>
+                            <p>
+                                Example prompts included homepage layout, cycle record saving, running page interaction,
+                                SOS overlay, Match buddy feature, music panel layout, health data cards, and mobile overflow fixes.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">AI Coding Scope</span>
+                            <h3>What AI helped with</h3>
+                            <p>
+                                ChatGPT helped us refine HTML structure, CSS spacing, JavaScript state logic, LocalStorage debugging,
+                                button alignment, card layout, and mobile page styling.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Checking</span>
+                            <h3>How we checked the output</h3>
+                            <p>
+                                We manually tested the generated code before using it, including navigation, cycle record saving,
+                                homepage text updates, Start/Pause/Finish, SOS, Match, music panel, and mobile layout.
+                            </p>
+                        </article>
+
+                        <article class="feature-card ai-logs-card">
+                            <div class="ai-logs-card-head">
+                                <span class="pill-label">AI Logs</span>
+                                <a class="ai-log-mini-button" href="ai-logs.html">
+                                    View AI Coding Logs
+                                </a>
+                            </div>
+
+                            <h3>Full prompt record</h3>
+                            <p>
+                                The main prompts are documented in the project repository under
+                                <strong>ai-logs/chatgpt-prompts.md</strong>. The web version shows selected prompts used during
+                                the main software development process.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading">
+                        <div>
+                            <p class="section-tag">Individual Contributions</p>
+                            <h2>Structured contribution record for the four team members</h2>
+                        </div>
+                        <p>
+                            This table documents each member’s role and specific contribution to the HerRun research,
+                            portfolio, prototype, testing, and presentation work.
+                        </p>
+                    </div>
+
+                    <div class="contribution-table-wrap">
+                        <table class="contribution-table">
+                            <thead>
+                                <tr>
+                                    <th>Team member</th>
+                                    <th>Role</th>
+                                    <th>Specific Contributions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td data-label="Team member">Leyi Li</td>
+                                    <td data-label="Role">Front-end developer / Portfolio developer</td>
+                                    <td data-label="Specific Contributions">
+                                        Built the high-fi web prototype pages, including the home page, running page,
+                                        cycle calendar, health data page, and profile page. Implemented responsive CSS,
+                                        mobile phone-frame layout, localStorage cycle record logic, running map controls,
+                                        music panel, SOS overlay, and buddy matching interaction.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td data-label="Team member">Nuoqian Xu</td>
+                                    <td data-label="Role">User researcher / Concept designer</td>
+                                    <td data-label="Specific Contributions">
+                                        Researched target user pain points, supported persona and requirement development,
+                                        contributed early sketches, and helped translate women runners’ needs into mood-aware,
+                                        safety-aware, and low-pressure design directions.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td data-label="Team member">Jinlong Huang</td>
+                                    <td data-label="Role">Requirement analyst / Content organizer</td>
+                                    <td data-label="Specific Contributions">
+                                        Collected and analysed user data, supported academic and commercial product comparison,
+                                        organized requirement content, refined portfolio writing, and contributed to poster layout
+                                        and research presentation materials.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td data-label="Team member">Shuheng Hu</td>
+                                    <td data-label="Role">Poster developer / Tester</td>
+                                    <td data-label="Specific Contributions">
+                                        Developed poster content, supported presentation material preparation, helped conduct
+                                        A/B testing and product evaluation, and identified usability issues for later interface refinement.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
 
                 <div class="page-cta page-cta-paired">
                     <a class="button button-secondary" href="ideation.html">Back to Ideation &amp; Alternatives</a>
