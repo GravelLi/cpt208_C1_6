@@ -32,6 +32,7 @@
         <span class="ambient-dot dot-c"></span>
         <span class="ambient-dot dot-d"></span>
     </div>
+
     <div class="page-shell">
         <nav class="site-nav" aria-label="Main navigation">
             <div class="site-nav-inner">
@@ -39,6 +40,7 @@
                     <img class="brand-mark" src="images/Icon.png" alt="HerRun logo">
                     <span>HerRun</span>
                 </a>
+
                 <div class="nav-links">
                     <a class="nav-link" href="index.html">Home</a>
                     <a class="nav-link" href="motivation.html">Motivation &amp; Research</a>
@@ -54,27 +56,181 @@
             <section class="content-panel subpage-panel page-enter">
                 <div class="section-heading">
                     <p class="section-tag">Technical Implementation</p>
-                    <h1 class="page-title">Translating the concept into architecture, delivery, and team ownership</h1>
+                    <h1 class="page-title">Building HerRun as a mobile-first, body-aware running web app</h1>
                     <p>
-                        This page reserves space for system-level explanation, the high-fi prototype or hosted build,
-                        and a clear record of individual contributions.
+                        This page explains how HerRun was implemented as an interactive web prototype.
+                        The system translates our women-centred running concept into working interface logic,
+                        including personalised daily goals, cycle-aware running adjustment, safety support,
+                        route-based running interaction, adaptive music, and wearable-style health feedback.
                     </p>
                 </div>
+
+                <section class="content-card architecture-showcase">
+                    <div class="architecture-header">
+                        <div>
+                            <p class="section-tag">System Architecture</p>
+                            <h2>From user input to personalised running feedback</h2>
+                        </div>
+
+                        <p>
+                            HerRun is implemented as a front-end web application. User actions are captured by the interface,
+                            processed through JavaScript interaction logic, and reflected back through personalised goals,
+                            safety states, running feedback, and simulated health data.
+                        </p>
+                    </div>
+
+                    <div class="architecture-flow-layout">
+                        <aside class="architecture-flow-card">
+                            <span class="flow-label">Main Data Flow</span>
+                            <h3>Input → Logic → Feedback</h3>
+                            <p>
+                                The prototype demonstrates how a future running app could respond to mood, cycle,
+                                location, safety, and wearable-style data without collecting real sensitive data.
+                            </p>
+
+                            <div class="flow-steps">
+                                <div class="flow-step">
+                                    <span>01</span>
+                                    <strong>User Input</strong>
+                                </div>
+
+                                <div class="flow-arrow">↓</div>
+
+                                <div class="flow-step">
+                                    <span>02</span>
+                                    <strong>JavaScript State Logic</strong>
+                                </div>
+
+                                <div class="flow-arrow">↓</div>
+
+                                <div class="flow-step">
+                                    <span>03</span>
+                                    <strong>Personalised UI Feedback</strong>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <div class="architecture-module-grid">
+                            <article class="architecture-module-card">
+                                <span class="module-index">01</span>
+                                <div>
+                                    <h3>User Input Layer</h3>
+                                    <p>Mood choice, cycle record, destination search, music mode, Match, SOS, and running actions.</p>
+                                </div>
+                            </article>
+
+                            <article class="architecture-module-card">
+                                <span class="module-index">02</span>
+                                <div>
+                                    <h3>Front-end State Logic</h3>
+                                    <p>JavaScript updates page content, buttons, overlays, running progress, and recommendation text.</p>
+                                </div>
+                            </article>
+
+                            <article class="architecture-module-card">
+                                <span class="module-index">03</span>
+                                <div>
+                                    <h3>Personalised Goal Engine</h3>
+                                    <p>Cycle status and symptoms influence today’s goal, mood message, and health suggestion.</p>
+                                </div>
+                            </article>
+
+                            <article class="architecture-module-card">
+                                <span class="module-index">04</span>
+                                <div>
+                                    <h3>Running Map Module</h3>
+                                    <p>AMap search, simulated current location, route status, timer, distance, pace, and heart rate.</p>
+                                </div>
+                            </article>
+
+                            <article class="architecture-module-card">
+                                <span class="module-index">05</span>
+                                <div>
+                                    <h3>Safety & Social Module</h3>
+                                    <p>SOS confirmation, touch-to-match running buddy, route awareness, and reassurance feedback.</p>
+                                </div>
+                            </article>
+
+                            <article class="architecture-module-card">
+                                <span class="module-index">06</span>
+                                <div>
+                                    <h3>Local Data Handling</h3>
+                                    <p>LocalStorage stores the selected cycle record; wearable and running data are simulated.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
 
                 <section class="content-card">
                     <div class="subsection-heading">
                         <div>
-                            <p class="section-tag">System Architecture</p>
-                            <h2>Featured placeholder for the final architecture diagram</h2>
+                            <p class="section-tag">Core Feature Implementation</p>
+                            <h2>How the must-have playful features were implemented</h2>
                         </div>
-                        <p>This large panel is reserved for the future architecture visual showing platform layers, logic, and data flow.</p>
+                        <p>
+                            The final prototype implements more than three core playful features from our requirements.
+                            Each feature connects emotional support, safety, health awareness, and playful motivation.
+                        </p>
                     </div>
 
-                    <div class="architecture-grid">
-                        <div class="architecture-box">User Interface Layer</div>
-                        <div class="architecture-box">Community &amp; Event Coordination</div>
-                        <div class="architecture-box">Safety &amp; Tracking Logic</div>
-                        <div class="architecture-box">Storage / Service Integration</div>
+                    <div class="triple-grid">
+                        <article class="feature-card">
+                            <span class="pill-label">Feature 1</span>
+                            <h3>Mood-based flexible goal</h3>
+                            <p>
+                                The home page presents a daily running goal that responds to the user’s current condition.
+                                Instead of pushing performance, HerRun suggests a flexible goal based on mood, recovery,
+                                and cycle-related state.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Feature 2</span>
+                            <h3>Cycle-aware running adjustment</h3>
+                            <p>
+                                The Cycle Calendar allows users to log period status and symptoms. The saved record changes
+                                the home page goal, health signal, and cycle reminder, helping users choose lighter movement,
+                                stretching, walking, or rest when needed.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Feature 3</span>
+                            <h3>Mood Star reward system</h3>
+                            <p>
+                                The Mood Star Map rewards gentle progress with stars rather than competition. This makes
+                                exercise feel playful and emotionally positive, especially for users who need encouragement
+                                rather than pressure.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Feature 4</span>
+                            <h3>Safety companion during running</h3>
+                            <p>
+                                The running page includes SOS, route status, location feedback, and buddy matching.
+                                These features make solo running feel more prepared, visible, and socially supported.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Feature 5</span>
+                            <h3>Adaptive music interaction</h3>
+                            <p>
+                                The music panel includes different categories such as recovery, easy, tempo, and sprint.
+                                The prototype connects running intensity and simulated heart rate with music recommendation logic.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Feature 6</span>
+                            <h3>Wearable-style health dashboard</h3>
+                            <p>
+                                The Health Data page visualises heart rate, pace, body fat rate, sleep, calories, recovery,
+                                and training load. It presents health information in a readable and supportive way.
+                            </p>
+                        </article>
                     </div>
                 </section>
 
@@ -83,8 +239,13 @@
                         <div class="subsection-heading subsection-heading-compact">
                             <div>
                                 <p class="section-tag">High-Fi Prototype</p>
-                                <h2>Open the given URL to explore the final interactive experience.</h2>
+                                <h2>Open the final interactive HerRun web app</h2>
                             </div>
+                            <p>
+                                The high-fi prototype is deployed as a public web application through GitHub Pages.
+                                It is designed for mobile use and demonstrates the main user journey from homepage
+                                to running, cycle logging, health data, and profile management.
+                            </p>
                         </div>
 
                         <a
@@ -95,8 +256,8 @@
                             aria-label="Open the final HerRun product webpage"
                         >
                             <span class="unlock-label">
-                                <span class="unlock-word">FIND</span>
-                                <span class="unlock-me">ME AT</span>
+                                <span class="unlock-word">LIVE</span>
+                                <span class="unlock-me">URL</span>
                                 <span>:</span>
                             </span>
                             <span class="unlock-url">https://gravelli.github.io/cpt208/</span>
@@ -104,49 +265,347 @@
                     </section>
 
                     <section class="content-card">
-                        <div class="subsection-heading">
+                        <div class="subsection-heading subsection-heading-compact">
                             <div>
-                                <p class="section-tag">Individual Contributions</p>
-                                <h2>Structured contribution record for the four team members</h2>
+                                <p class="section-tag">Source Repository</p>
+                                <h2>Code repository and implementation files</h2>
                             </div>
-                            <p>This table documents the role and specific responsibilities of each member in the HerRun portfolio and product work.</p>
+                            <p>
+                                The repository contains the web pages, CSS files, JavaScript interaction logic,
+                                image assets, audio assets, and README documentation for the prototype.
+                            </p>
                         </div>
 
-                        <div class="contribution-table-wrap">
-                            <table class="contribution-table">
-                                <thead>
-                                    <tr>
-                                        <th>Team member</th>
-                                        <th>Role</th>
-                                        <th>Specific Contributions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-label="Team member">Leyi Li</td>
-                                        <td data-label="Role">Front-end designer, Portfolio developer</td>
-                                        <td data-label="Specific Contributions">Responsible for all the implementation of the product's front-end and the basic setup of the portfolio.</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Team member">Nuoqian Xu</td>
-                                        <td data-label="Role">Researcher, Solution designer</td>
-                                        <td data-label="Specific Contributions">Responsible for researching how to address the actual pain points of users and sketching out the early designs of the product.</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Team member">Jinlong Huang</td>
-                                        <td data-label="Role">Researcher, Requirement Analyzer</td>
-                                        <td data-label="Specific Contributions">Responsible for the collection, research, analysis of user data, the improvement of the portfolio, and the layout of the posters.</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Team member">Shuheng Hu</td>
-                                        <td data-label="Role">Poster developer, tester</td>
-                                        <td data-label="Specific Contributions">Responsible for the overall content creation of the poster, as well as subsequent A/B testing and product evaluation.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <a
+                            class="unlock-link-card"
+                            href="https://github.com/GravelLi/cpt208"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open the HerRun GitHub repository"
+                        >
+                            <span class="unlock-label">
+                                <span class="unlock-word">SOURCE</span>
+                                <span class="unlock-me">CODE</span>
+                                <span>:</span>
+                            </span>
+                            <span class="unlock-url">https://github.com/GravelLi/cpt208</span>
+                        </a>
                     </section>
                 </div>
+
+                <section class="content-card">
+                    <div class="subsection-heading">
+                        <div>
+                            <p class="section-tag">Technology Stack &amp; Deployment</p>
+                            <h2>Free-tier web technologies used to build and publish HerRun</h2>
+                        </div>
+                        <p>
+                            The prototype uses lightweight front-end technologies so that it can be hosted publicly,
+                            opened through a URL, and tested on a mobile-sized interface.
+                        </p>
+                    </div>
+
+                    <div class="triple-grid">
+                        <article class="feature-card">
+                            <span class="pill-label">Platform</span>
+                            <h3>Mobile-first Web App</h3>
+                            <p>
+                                HerRun was developed as a web app using HTML, CSS, and JavaScript.
+                                The visual layout uses a phone-frame interface to match the mobile running context.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Deployment</span>
+                            <h3>GitHub Pages</h3>
+                            <p>
+                                The prototype is deployed through GitHub Pages, making the final system accessible
+                                through a public live URL during the marking period.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Map Service</span>
+                            <h3>AMap interaction</h3>
+                            <p>
+                                The running page uses AMap-based search, location, route display, and map interaction
+                                to simulate an outdoor running experience.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">State Logic</span>
+                            <h3>JavaScript interaction states</h3>
+                            <p>
+                                JavaScript controls start, pause, finish, route status, music selection, SOS overlay,
+                                buddy matching, heart rate, pace, and cycle-based home page text.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Local Storage</span>
+                            <h3>Cycle record persistence</h3>
+                            <p>
+                                The cycle page stores the user’s selected cycle status and symptoms locally.
+                                The home page reads this record and updates the personalised goal and reminder.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Assets</span>
+                            <h3>Images, icons, and audio</h3>
+                            <p>
+                                The prototype uses custom visual assets, SVG icons, avatar imagery, and local audio files
+                                to support the playful and energetic HerRun identity.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading">
+                        <div>
+                            <p class="section-tag">Data Handling</p>
+                            <h2>How HerRun manages user input and interaction states</h2>
+                        </div>
+                        <p>
+                            HerRun does not collect real medical or safety data in this prototype. Instead, it uses
+                            local records and simulated data to demonstrate how a future version could respond to users
+                            in a more personal and supportive way.
+                        </p>
+                    </div>
+
+                    <div class="split-grid">
+                        <article class="feature-card">
+                            <span class="pill-label">Cycle Record</span>
+                            <h3>LocalStorage-based persistence</h3>
+                            <p>
+                                When users save today’s cycle status and symptoms, the record is stored locally.
+                                The home page reads the saved record and updates the daily goal, health suggestion,
+                                mood message, and cycle reminder.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Running State</span>
+                            <h3>Start, pause, finish, and route feedback</h3>
+                            <p>
+                                The running page tracks whether the user is running, elapsed time, simulated distance,
+                                heart rate, pace, destination route, buddy status, and music state.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Safety State</span>
+                            <h3>SOS and buddy matching</h3>
+                            <p>
+                                The SOS button opens a confirmation overlay before triggering emergency feedback.
+                                The Match button changes the buddy state and gives the user a sense of social support.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Health Data</span>
+                            <h3>Wearable-style simulated metrics</h3>
+                            <p>
+                                The Health Data page uses static and simulated metrics such as heart rate,
+                                recovery score, pace, sleep, calories, and body fat rate to represent wearable integration.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading">
+                        <div>
+                            <p class="section-tag">Responsive &amp; Accessibility</p>
+                            <h2>Mobile-first interface for running and outdoor contexts</h2>
+                        </div>
+                        <p>
+                            Since HerRun belongs to the Go Runners track, the interface is designed around mobile use,
+                            quick understanding, and low-effort interaction during everyday running contexts.
+                        </p>
+                    </div>
+
+                    <div class="triple-grid">
+                        <article class="feature-card">
+                            <span class="pill-label">Mobile-first</span>
+                            <h3>Phone-frame layout</h3>
+                            <p>
+                                The product pages use a mobile frame, scrollable main content, large rounded cards,
+                                and touch-friendly spacing to support one-handed mobile use.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Readable Controls</span>
+                            <h3>Text-supported icons</h3>
+                            <p>
+                                Key controls such as Music, Match, SOS, Start, Save, and View are supported by text labels
+                                rather than relying only on icons.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Supportive Language</span>
+                            <h3>Emotionally safe feedback</h3>
+                            <p>
+                                Health and cycle suggestions are written as gentle guidance, not medical diagnosis.
+                                Rest, walking, stretching, and light movement are treated as valid forms of progress.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading">
+                        <div>
+                            <p class="section-tag">Technical Reflection</p>
+                            <h2>AI-assisted coding prompts, verification, and ethical control</h2>
+                        </div>
+                        <p>
+                            We used ChatGPT as coding support during implementation. The tool helped us scaffold interface layouts,
+                            debug interaction states, and refine wording, but the project direction, user requirements, and final
+                            design decisions remained human-led.
+                        </p>
+                    </div>
+
+                    <div class="split-grid">
+                        <article class="feature-card">
+                            <span class="pill-label">Prompt Examples</span>
+                            <h3>Prompts used for core logic and layout</h3>
+                            <p>
+                                Example prompts included: “Create a mobile-first running app homepage with mood-based daily goals,”
+                                “Help me make the cycle calendar save selected status and symptoms after leaving the page,”
+                                “Update the homepage text according to today’s selected cycle condition,” and
+                                “Fix the running page so Start, Finish, Music, SOS, and Match each update the correct interface state.”
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">AI Coding Scope</span>
+                            <h3>What AI helped with</h3>
+                            <p>
+                                ChatGPT was used to generate or refine HTML structure, CSS card layouts, responsive spacing,
+                                JavaScript state logic suggestions, localStorage debugging ideas, portfolio wording, and README text.
+                                It was not used to define our research findings, project motivation, or human-centred design logic.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Verification</span>
+                            <h3>How we checked the generated code</h3>
+                            <p>
+                                We manually tested whether the saved cycle record changed the homepage, whether running controls
+                                updated the correct visual states, whether SOS and Match overlays appeared as expected, whether
+                                navigation links worked, and whether the prototype remained usable on a mobile-sized screen.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Requirement Match</span>
+                            <h3>How we checked user requirements</h3>
+                            <p>
+                                We compared the implemented features with our three must-have requirements: mood-based mini missions,
+                                star-based rewards, and emotionally positive feedback. We also checked that safety support, cycle-aware
+                                adjustment, and wearable-style health feedback matched the needs identified in our user research.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <span class="pill-label">Ethics</span>
+                            <h3>Responsible use of sensitive data</h3>
+                            <p>
+                                Because HerRun involves mood, menstrual cycle, safety, and health contexts, the prototype uses local
+                                or simulated data. It does not claim to provide medical advice, and its feedback is written to be
+                                supportive rather than judgmental or body-shaming.
+                            </p>
+                        </article>
+
+                        <article class="feature-card ai-logs-card">
+                            <div class="ai-logs-card-head">
+                                <span class="pill-label">AI Logs</span>
+                                <a class="ai-log-mini-button" href="ai-logs.html">
+                                    View AI Coding Logs
+                                </a>
+                            </div>
+
+                            <h3>Prompt record in repository</h3>
+                            <p>
+                                The main prompts used for AI-assisted coding are documented in the project repository under an
+                                ai-logs folder. This helps make our use of AI transparent and separates coding assistance from
+                                our own research, design reasoning, and evaluation work.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="subsection-heading">
+                        <div>
+                            <p class="section-tag">Individual Contributions</p>
+                            <h2>Structured contribution record for the four team members</h2>
+                        </div>
+                        <p>
+                            This table documents each member’s role and specific contribution to the HerRun research,
+                            portfolio, prototype, testing, and presentation work.
+                        </p>
+                    </div>
+
+                    <div class="contribution-table-wrap">
+                        <table class="contribution-table">
+                            <thead>
+                                <tr>
+                                    <th>Team member</th>
+                                    <th>Role</th>
+                                    <th>Specific Contributions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td data-label="Team member">Leyi Li</td>
+                                    <td data-label="Role">Front-end developer / Portfolio developer</td>
+                                    <td data-label="Specific Contributions">
+                                        Built the high-fi web prototype pages, including the home page, running page,
+                                        cycle calendar, health data page, and profile page. Implemented responsive CSS,
+                                        mobile phone-frame layout, localStorage cycle record logic, running map controls,
+                                        music panel, SOS overlay, buddy matching interaction, and the technical portfolio structure.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td data-label="Team member">Nuoqian Xu</td>
+                                    <td data-label="Role">User researcher / Concept designer</td>
+                                    <td data-label="Specific Contributions">
+                                        Researched target user pain points, supported persona and requirement development,
+                                        contributed early sketches, and helped translate women runners’ needs into mood-aware,
+                                        safety-aware, and low-pressure design directions.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td data-label="Team member">Jinlong Huang</td>
+                                    <td data-label="Role">Requirement analyst / Content organizer</td>
+                                    <td data-label="Specific Contributions">
+                                        Collected and analysed user data, supported academic and commercial product comparison,
+                                        organized requirement content, refined portfolio writing, and contributed to poster layout
+                                        and research presentation materials.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td data-label="Team member">Shuheng Hu</td>
+                                    <td data-label="Role">Poster developer / Tester</td>
+                                    <td data-label="Specific Contributions">
+                                        Developed poster content, supported presentation material preparation, helped conduct
+                                        A/B testing and product evaluation, and identified usability issues for later interface refinement.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
 
                 <div class="page-cta page-cta-paired">
                     <a class="button button-secondary" href="ideation.html">Back to Ideation &amp; Alternatives</a>
