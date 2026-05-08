@@ -3657,6 +3657,10 @@ img {
         box-shadow: 0 10px 20px rgba(217, 91, 87, 0.22);
     }
 
+    .source-link-card {
+        background: linear-gradient(135deg, #f4a2a3 0%, #c76877 52%, #7f3748 100%);
+    }
+
     @media (max-width: 768px) {
         .ai-logs-page .compact-info-card {
             padding: 20px 18px;
