@@ -1731,6 +1731,17 @@ img {
     letter-spacing: -0.03em;
 }
 
+.chosen-direction-card {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: none;
+    padding: 24px;
+}
+
+.chosen-direction-card p {
+    max-width: none;
+}
+
 .requirements-card-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
