@@ -65,100 +65,17 @@
                     </p>
                 </div>
 
-                <section class="content-card architecture-showcase">
-                    <div class="architecture-header">
+                <section class="content-card">
+                    <div class="subsection-heading">
                         <div>
                             <p class="section-tag">System Architecture</p>
-                            <h2>From user input to personalised running feedback</h2>
+                            <h2>System Sequence Diagram</h2>
                         </div>
-
-                        <p>
-                            HerRun is implemented as a front-end web application. User actions are captured by the interface,
-                            processed through JavaScript interaction logic, and reflected back through personalised goals,
-                            safety states, running feedback, and simulated health data.
-                        </p>
+                        <p>The sequence diagram below illustrates the platform layers, logic, and data flow within the HerRun system.</p>
                     </div>
 
-                    <div class="architecture-flow-layout">
-                        <aside class="architecture-flow-card">
-                            <span class="flow-label">Main Data Flow</span>
-                            <h3>Input → Logic → Feedback</h3>
-                            <p>
-                                The prototype demonstrates how a future running app could respond to mood, cycle,
-                                location, safety, and wearable-style data without collecting real sensitive data.
-                            </p>
-
-                            <div class="flow-steps">
-                                <div class="flow-step">
-                                    <span>01</span>
-                                    <strong>User Input</strong>
-                                </div>
-
-                                <div class="flow-arrow">↓</div>
-
-                                <div class="flow-step">
-                                    <span>02</span>
-                                    <strong>JavaScript State Logic</strong>
-                                </div>
-
-                                <div class="flow-arrow">↓</div>
-
-                                <div class="flow-step">
-                                    <span>03</span>
-                                    <strong>Personalised UI Feedback</strong>
-                                </div>
-                            </div>
-                        </aside>
-
-                        <div class="architecture-module-grid">
-                            <article class="architecture-module-card">
-                                <span class="module-index">01</span>
-                                <div>
-                                    <h3>User Input Layer</h3>
-                                    <p>Mood choice, cycle record, destination search, music mode, Match, SOS, and running actions.</p>
-                                </div>
-                            </article>
-
-                            <article class="architecture-module-card">
-                                <span class="module-index">02</span>
-                                <div>
-                                    <h3>Front-end State Logic</h3>
-                                    <p>JavaScript updates page content, buttons, overlays, running progress, and recommendation text.</p>
-                                </div>
-                            </article>
-
-                            <article class="architecture-module-card">
-                                <span class="module-index">03</span>
-                                <div>
-                                    <h3>Personalised Goal Engine</h3>
-                                    <p>Cycle status and symptoms influence today’s goal, mood message, and health suggestion.</p>
-                                </div>
-                            </article>
-
-                            <article class="architecture-module-card">
-                                <span class="module-index">04</span>
-                                <div>
-                                    <h3>Running Map Module</h3>
-                                    <p>AMap search, simulated current location, route status, timer, distance, pace, and heart rate.</p>
-                                </div>
-                            </article>
-
-                            <article class="architecture-module-card">
-                                <span class="module-index">05</span>
-                                <div>
-                                    <h3>Safety & Social Module</h3>
-                                    <p>SOS confirmation, touch-to-match running buddy, route awareness, and reassurance feedback.</p>
-                                </div>
-                            </article>
-
-                            <article class="architecture-module-card">
-                                <span class="module-index">06</span>
-                                <div>
-                                    <h3>Local Data Handling</h3>
-                                    <p>LocalStorage stores the selected cycle record; wearable and running data are simulated.</p>
-                                </div>
-                            </article>
-                        </div>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <img src="images/herrun_sequence_diagram.png" alt="HerRun System Sequence Diagram" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.12);">
                     </div>
                 </section>
 
@@ -166,69 +83,67 @@
                     <div class="subsection-heading">
                         <div>
                             <p class="section-tag">Core Feature Implementation</p>
-                            <h2>How the must-have playful features were implemented</h2>
+                            <h2>Implemented features connected to our user requirements</h2>
                         </div>
                         <p>
-                            The final prototype implements more than three core playful features from our requirements.
-                            Each feature connects emotional support, safety, health awareness, and playful motivation.
+                            HerRun implements the main playful and supportive features from our requirements,
+                            including mood-based goals, cycle-aware adjustment, safety support, music interaction,
+                            and wearable-style health feedback.
                         </p>
                     </div>
 
                     <div class="triple-grid">
                         <article class="feature-card">
                             <span class="pill-label">Feature 1</span>
-                            <h3>Mood-based flexible goal</h3>
+                            <h3>Mood-based daily goal</h3>
                             <p>
-                                The home page presents a daily running goal that responds to the user’s current condition.
-                                Instead of pushing performance, HerRun suggests a flexible goal based on mood, recovery,
-                                and cycle-related state.
+                                The homepage shows a flexible running goal based on the user's mood, health signal,
+                                and saved cycle record. The goal is designed to feel gentle rather than strict.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <span class="pill-label">Feature 2</span>
-                            <h3>Cycle-aware running adjustment</h3>
+                            <h3>Cycle-aware adjustment</h3>
                             <p>
-                                The Cycle Calendar allows users to log period status and symptoms. The saved record changes
-                                the home page goal, health signal, and cycle reminder, helping users choose lighter movement,
-                                stretching, walking, or rest when needed.
+                                The Cycle Calendar lets users save today's cycle condition. The homepage then updates
+                                the goal and reminder text based on the saved record.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <span class="pill-label">Feature 3</span>
-                            <h3>Mood Star reward system</h3>
+                            <h3>Safety support</h3>
                             <p>
-                                The Mood Star Map rewards gentle progress with stars rather than competition. This makes
-                                exercise feel playful and emotionally positive, especially for users who need encouragement
-                                rather than pressure.
+                                The running page includes SOS confirmation, route status, and Match buddy interaction
+                                to make solo running feel safer and more supported.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <span class="pill-label">Feature 4</span>
-                            <h3>Safety companion during running</h3>
+                            <h3>Adaptive music</h3>
                             <p>
-                                The running page includes SOS, route status, location feedback, and buddy matching.
-                                These features make solo running feel more prepared, visible, and socially supported.
+                                The music panel includes categories such as recovery, easy, tempo, and sprint.
+                                The prototype also simulates music recommendation based on heart rate.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <span class="pill-label">Feature 5</span>
-                            <h3>Adaptive music interaction</h3>
+                            <h3>Wearable-style health data</h3>
                             <p>
-                                The music panel includes different categories such as recovery, easy, tempo, and sprint.
-                                The prototype connects running intensity and simulated heart rate with music recommendation logic.
+                                The Health Data page presents heart rate, pace, sleep, calories, recovery score,
+                                and trend information in a simple mobile dashboard.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <span class="pill-label">Feature 6</span>
-                            <h3>Wearable-style health dashboard</h3>
+                            <h3>Playful reward feedback</h3>
                             <p>
-                                The Health Data page visualises heart rate, pace, body fat rate, sleep, calories, recovery,
-                                and training load. It presents health information in a readable and supportive way.
+                                The homepage uses a Mood Star reward area to make progress feel positive and playful,
+                                instead of only focusing on speed, calories, or distance.
                             </p>
                         </article>
                     </div>
@@ -487,7 +402,7 @@
                             <h3>What AI helped with</h3>
                             <p>
                                 ChatGPT was used to generate or refine HTML structure, CSS card layouts, responsive spacing,
-                                JavaScript state logic suggestions, localStorage debugging ideas, portfolio wording, and README text.
+                                JavaScript state logic suggestions, localStorage debugging ideas, interface wording, mobile layout adjustment, and debugging support.
                                 It was not used to define our research findings, project motivation, or human-centred design logic.
                             </p>
                         </article>
@@ -570,7 +485,7 @@
                                         Built the high-fi web prototype pages, including the home page, running page,
                                         cycle calendar, health data page, and profile page. Implemented responsive CSS,
                                         mobile phone-frame layout, localStorage cycle record logic, running map controls,
-                                        music panel, SOS overlay, buddy matching interaction, and the technical portfolio structure.
+                                        music panel, SOS overlay, and buddy matching interaction.
                                     </td>
                                 </tr>
 
