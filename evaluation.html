@@ -240,7 +240,12 @@
                 tag: "Product early stage",
                 description:
                     "In the early stage, HerRun was mainly designed as a feature-complete running app. The focus was on basic running functions, route planning, and general activity support.",
-                images: ["images/R1_1.png", "images/R1_2.png"],
+                images: [
+                    "images/R1_1.png",
+                    "images/R1_2.png",
+                    "images/R1_3.png",
+                    "images/R1_4.png",
+                ],
                 chips: ["General running app", "Basic functions", "Early structure"],
                 theme: "early",
             },
@@ -296,6 +301,7 @@
             let isDragging = false;
 
             const getGalleryLayout = (stage) => {
+                if (stage.key === "R1") return "four";
                 if (stage.key === "R2") return "eight";
                 if (stage.key === "R3") return "five";
                 return "two";
