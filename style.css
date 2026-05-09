@@ -63,6 +63,45 @@ img {
     display: block;
 }
 
+.women-core-highlight {
+    font-weight: 800;
+    color: #d94f6d;
+    background: linear-gradient(90deg, #ff7474, #ff9a9a, #d94f6d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0 0 12px rgba(255, 116, 116, 0.18);
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    .women-core-highlight {
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.women-soft-highlight {
+    font-weight: 650;
+    color: #8f3a4a;
+    background: rgba(255, 116, 116, 0.14);
+    border-radius: 6px;
+    padding: 0.03em 0.25em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.women-feature-tag {
+    display: inline-block;
+    font-weight: 650;
+    color: #9a3c4e;
+    background: #ffe8e1;
+    border: 1px solid rgba(255, 116, 116, 0.28);
+    border-radius: 999px;
+    padding: 0.08em 0.45em;
+    line-height: 1.35;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
 .ambient-scene {
     position: fixed;
     inset: 0;
@@ -2114,7 +2153,7 @@ img {
     margin-top: 16px;
 }
 
-.list-block span {
+.list-block > span {
     display: inline-block;
     margin-bottom: 8px;
     color: var(--primary-deep);
@@ -2439,7 +2478,7 @@ img {
     pointer-events: auto;
 }
 
-.insight-panel span {
+.insight-panel > span {
     position: absolute;
     top: 22px;
     left: 22px;
@@ -2455,7 +2494,7 @@ img {
     box-shadow: 0 10px 18px rgba(239, 93, 93, 0.18);
 }
 
-.insight-hint-panel span {
+.insight-hint-panel > span {
     background: rgba(255, 215, 215, 0.94);
     color: var(--primary-deep);
 }
@@ -2756,7 +2795,7 @@ img {
     border: 1px solid rgba(248, 196, 196, 0.50);
 }
 
-.usability-insight-card span {
+.usability-insight-card > span {
     display: block;
     margin-bottom: 8px;
     color: var(--primary-deep);
@@ -4279,7 +4318,7 @@ img {
         padding: 74px 16px 18px;
     }
 
-    .insight-panel span {
+    .insight-panel > span {
         top: 18px;
         left: 16px;
     }
